@@ -10,8 +10,8 @@ interface OrganizationSchemaProps {
 
 export function OrganizationSchema({
   name = "Chamchi",
-  url = "https://chamchi.edu.vn",
-  logo = "https://chamchi.edu.vn/logo.png",
+  url = "https://chamchi.vn",
+  logo = "https://chamchi.vn/logo.png",
   description = "Chamchi là trung tâm Anh ngữ hiện đại dạy tiếng Anh thông qua phương pháp STEAM cho học sinh từ lớp 6 trở lên.",
   sameAs = ["https://facebook.com/chamchi", "https://instagram.com/chamchi", "https://youtube.com/chamchi"],
 }: OrganizationSchemaProps) {
@@ -35,7 +35,7 @@ export function OrganizationSchema({
       "@type": "ContactPoint",
       telephone: "+84-123-456-789",
       contactType: "customer service",
-      email: "info@chamchi.edu.vn",
+      email: "info@chamchi.vn",
       availableLanguage: ["Vietnamese", "English"],
     },
   }
@@ -60,7 +60,7 @@ export function CourseSchema({
   name,
   description,
   provider = "Chamchi",
-  url = "https://chamchi.edu.vn",
+  url = "https://chamchi.vn",
 }: CourseSchemaProps) {
   const courseSchema = {
     "@context": "https://schema.org",
@@ -121,7 +121,7 @@ interface WebsiteSchemaProps {
 
 export function WebsiteSchema({
   name = "Chamchi - Trung tâm Anh ngữ STEAM",
-  url = "https://chamchi.edu.vn",
+  url = "https://chamchi.vn",
   description = "Chamchi là trung tâm Anh ngữ hiện đại dạy tiếng Anh thông qua phương pháp STEAM cho học sinh từ lớp 6 trở lên.",
 }: WebsiteSchemaProps) {
   const websiteSchema = {

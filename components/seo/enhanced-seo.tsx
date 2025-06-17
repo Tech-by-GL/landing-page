@@ -55,7 +55,7 @@ export function EnhancedSEO({
   title,
   description,
   canonical = typeof window !== "undefined" ? window.location.href : "",
-  ogImage = "https://chamchi.edu.vn/og-image.jpg",
+  ogImage = "https://chamchi.vn/og-image.jpg",
   ogType = "website",
   twitterCard = "summary_large_image",
   keywords = [],
@@ -85,13 +85,13 @@ export function EnhancedSEO({
       "@context": "https://schema.org",
       "@type": "WebSite",
       name: siteName,
-      url: "https://chamchi.edu.vn",
+      url: "https://chamchi.vn",
       description: description,
       potentialAction: {
         "@type": "SearchAction",
         target: {
           "@type": "EntryPoint",
-          urlTemplate: "https://chamchi.edu.vn/search?q={search_term_string}",
+          urlTemplate: "https://chamchi.vn/search?q={search_term_string}",
         },
         "query-input": "required name=search_term_string",
       },
@@ -102,8 +102,8 @@ export function EnhancedSEO({
       "@context": "https://schema.org",
       "@type": "EducationalOrganization",
       name: "Chamchi",
-      url: "https://chamchi.edu.vn",
-      logo: "https://chamchi.edu.vn/logo.png",
+      url: "https://chamchi.vn",
+      logo: "https://chamchi.vn/logo.png",
       description:
         "Chamchi là trung tâm Anh ngữ hiện đại dạy tiếng Anh thông qua phương pháp STEAM cho học sinh từ lớp 6 trở lên.",
       sameAs: ["https://facebook.com/chamchi", "https://instagram.com/chamchi", "https://youtube.com/chamchi"],
@@ -119,7 +119,7 @@ export function EnhancedSEO({
         "@type": "ContactPoint",
         telephone: "+84-123-456-789",
         contactType: "customer service",
-        email: "info@chamchi.edu.vn",
+        email: "info@chamchi.vn",
         availableLanguage: ["Vietnamese", "English"],
       },
     })
@@ -143,7 +143,7 @@ export function EnhancedSEO({
           name: "Chamchi",
           logo: {
             "@type": "ImageObject",
-            url: "https://chamchi.edu.vn/logo.png",
+            url: "https://chamchi.vn/logo.png",
           },
         },
         mainEntityOfPage: {

@@ -170,7 +170,7 @@ export function MobileNavigation() {
 
               <div className="mt-6 text-white/60 text-sm">
                 <p>Hotline: 0123 456 789</p>
-                <p className="mt-1">Email: info@chamchi.edu.vn</p>
+                <p className="mt-1">Email: info@chamchi.vn</p>
               </div>
             </div>
           </motion.div>

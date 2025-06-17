@@ -2,8 +2,13 @@
 User-agent: *
 Allow: /
 
+# Googlebot-Image
+User-agent: Googlebot-Image
+Disallow: /images/private/*
+
 # Host
-Host: https://chamchi.edu.vn
+Host: https://www.chamchi.vn
 
 # Sitemaps
-Sitemap: https://chamchi.edu.vn/sitemap.xml
+Sitemap: https://www.chamchi.vn/sitemap.xml
+Sitemap: https://www.chamchi.vn/my-custom-sitemap.xml

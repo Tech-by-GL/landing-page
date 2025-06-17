@@ -50,7 +50,7 @@ export const Address = () => {
             {/* <p>
               📧 <strong>Email:</strong>{" "}
               <a
-                href="mailto:hello@chamchi.edu.vn"
+                href="mailto:hello@chamchi.vn"
                 className="text-primary hover:underline"
               >
                 team@chamchi.ai

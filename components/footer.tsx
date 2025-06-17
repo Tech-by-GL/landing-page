@@ -23,7 +23,7 @@ export function Footer() {
               phương pháp STEAM cho học sinh từ lớp 6 trở lên.
             </p>
             <meta itemProp="name" content="Chamchi English Center" />
-            <meta itemProp="url" content="https://chamchi.edu.vn" />
+            <meta itemProp="url" content="https://chamchi.vn" />
           </div>
 
           <div>
@@ -157,10 +157,10 @@ export function Footer() {
               <li className="flex items-center">
                 <Mail className="mr-2 h-5 w-5 text-accent shrink-0" />
                 <a
-                  href="mailto:info@chamchi.edu.vn"
+                  href="mailto:info@chamchi.vn"
                   className="text-white/80 hover:text-white"
                   itemProp="email"
-                  content="info@chamchi.edu.vn"
+                  content="info@chamchi.vn"
                 >
                   team@chamchi.vn
                 </a>

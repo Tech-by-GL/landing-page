@@ -24,7 +24,7 @@ import { CourseGallery } from "./tieng-anh-lop-6-9/page";
 import { Address } from "@/components/address";
 
 export const metadata: Metadata = {
-  title: "Trang chủ | Chamchi - Trung tâm Anh ngữ STEAM",
+  title: "Anh Ngữ Chăm Chỉ - Home",
   description:
     "Chamchi là trung tâm Anh ngữ hiện đại dạy tiếng Anh thông qua phương pháp STEAM cho học sinh từ lớp 6 trở lên. Khám phá các khóa học KET, PET, IELTS và tiếng Anh STEAM với giải pháp học tập đột phá.",
   alternates: {
@@ -48,7 +48,7 @@ export const metadata: Metadata = {
       "Học tiếng Anh hiệu quả với phương pháp STEAM độc đáo. Tỷ lệ đỗ chứng chỉ quốc tế lên đến 98%.",
     images: [
       {
-        url: "https://chamchi.edu.vn/og-image-home.jpg",
+        url: "https://chamchi.vn/og-image-home.jpg",
         width: 1200,
         height: 630,
         alt: "Chamchi - Trung tâm Anh ngữ STEAM",

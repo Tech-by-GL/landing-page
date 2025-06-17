@@ -16,15 +16,18 @@ const nunito = Nunito({
 })
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://chamchi.edu.vn"),
+  metadataBase: new URL("https://chamchi.vn"),
   title: {
-    default: "Chamchi - Trung tâm Anh ngữ STEAM",
+    default: "Anh Ngữ Chăm Chỉ",
     template: "%s | Chamchi",
   },
   description:
-    "Chamchi là trung tâm Anh ngữ hiện đại dạy tiếng Anh thông qua phương pháp STEAM cho học sinh từ lớp 6 trở lên. Chúng tôi chuẩn bị cho học sinh các chứng chỉ quốc tế như KET, PET và IELTS.",
+    "Chamchi là trung tâm Anh ngữ hiện đại dạy tiếng Anh thông qua phương pháp STEAM Kết hợp Trí Tuệ Nhân Tạo. Chúng tôi chuẩn bị cho học sinh các chứng chỉ quốc tế như KET, PET và IELTS.",
   keywords: [
     "Chamchi",
+    "Chăm Chỉ",
+    "Anh Ngữ Chăm Chỉ",
+    "trung tâm Anh ngữ Chăm Chỉ",
     "tiếng Anh",
     "STEAM",
     "KET",
@@ -38,8 +41,11 @@ export const metadata: Metadata = {
     "tiếng Anh STEAM",
     "luyện thi tiếng Anh",
     "trung tâm tiếng Anh uy tín",
+    "trung tâm tiếng Anh ở Thủ Đức",
+    "trung tâm anh ngữ ở Thủ Đức",
+    "trung tâm anh ngữ kết hợp máy tính",
   ],
-  authors: [{ name: "Chamchi", url: "https://chamchi.edu.vn" }],
+  authors: [{ name: "Chamchi", url: "https://chamchi.vn" }],
   creator: "Chamchi",
   publisher: "Chamchi",
   formatDetection: {
@@ -57,29 +63,33 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "vi_VN",
-    url: "https://chamchi.edu.vn",
-    title: "Chamchi - Trung tâm Anh ngữ STEAM",
+    url: "https://chamchi.vn",
+    title: "Chamchi - Trung tâm Anh ngữ STEAM & Trí Tuệ Nhân Tạo",
     description:
-      "Chamchi là trung tâm Anh ngữ hiện đại dạy tiếng Anh thông qua phương pháp STEAM cho học sinh từ lớp 6 trở lên.",
+      "Chamchi là trung tâm Anh ngữ hiện đại dạy tiếng Anh thông qua phương pháp STEAM kết hợp Trí Tuệ Nhân Tạo.",
     siteName: "Chamchi",
     images: [
       {
-        url: "https://chamchi.edu.vn/og-image.jpg",
+        url: "https://chamchi.vn/og-image.jpg",
         width: 1200,
         height: 630,
         alt: "Chamchi - Trung tâm Anh ngữ STEAM",
       },
     ],
+    
   },
-  twitter: {
-    card: "summary_large_image",
-    title: "Chamchi - Trung tâm Anh ngữ STEAM",
-    description:
-      "Chamchi là trung tâm Anh ngữ hiện đại dạy tiếng Anh thông qua phương pháp STEAM cho học sinh từ lớp 6 trở lên.",
-    images: ["https://chamchi.edu.vn/og-image.jpg"],
-    creator: "@chamchi",
-    site: "@chamchi",
+  icons: {
+    icon: "/favicon.ico",
   },
+  // twitter: {
+  //   card: "summary_large_image",
+  //   title: "Chamchi - Trung tâm Anh ngữ STEAM",
+  //   description:
+  //     "Chamchi là trung tâm Anh ngữ hiện đại dạy tiếng Anh thông qua phương pháp STEAM cho học sinh từ lớp 6 trở lên.",
+  //   images: ["https://chamchi.vn/og-image.jpg"],
+  //   creator: "@chamchi",
+  //   site: "@chamchi",
+  // },
   robots: {
     index: true,
     follow: true,

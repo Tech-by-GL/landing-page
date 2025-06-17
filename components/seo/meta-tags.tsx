@@ -15,7 +15,7 @@ export function MetaTags({
   keywords = "Chamchi, tiếng Anh, STEAM, KET, PET, IELTS, trung tâm anh ngữ, học tiếng Anh, luyện thi chứng chỉ, tiếng Anh cho học sinh",
   ogImage = "/og-image.jpg",
   ogType = "website",
-  canonicalUrl = "https://chamchi.edu.vn",
+  canonicalUrl = "https://chamchi.vn",
 }: MetaTagsProps) {
   const fullTitle = title.includes("Chamchi") ? title : `${title} | Chamchi`
 
@@ -42,13 +42,6 @@ export function MetaTags({
       <meta property="og:image" content={ogImage} />
       <meta property="og:locale" content="vi_VN" />
       <meta property="og:site_name" content="Chamchi" />
-
-      {/* Twitter */}
-      <meta property="twitter:card" content="summary_large_image" />
-      <meta property="twitter:url" content={canonicalUrl} />
-      <meta property="twitter:title" content={fullTitle} />
-      <meta property="twitter:description" content={description} />
-      <meta property="twitter:image" content={ogImage} />
     </Head>
   )
 }
