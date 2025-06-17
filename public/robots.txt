@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://chamchi.edu.vn
+
+# Sitemaps
+Sitemap: https://chamchi.edu.vn/sitemap.xml

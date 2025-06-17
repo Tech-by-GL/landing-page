@@ -1,0 +1,178 @@
+import Script from "next/script"
+
+interface OrganizationSchemaProps {
+  name?: string
+  url?: string
+  logo?: string
+  description?: string
+  sameAs?: string[]
+}
+
+export function OrganizationSchema({
+  name = "Chamchi",
+  url = "https://chamchi.edu.vn",
+  logo = "https://chamchi.edu.vn/logo.png",
+  description = "Chamchi là trung tâm Anh ngữ hiện đại dạy tiếng Anh thông qua phương pháp STEAM cho học sinh từ lớp 6 trở lên.",
+  sameAs = ["https://facebook.com/chamchi", "https://instagram.com/chamchi", "https://youtube.com/chamchi"],
+}: OrganizationSchemaProps) {
+  const orgSchema = {
+    "@context": "https://schema.org",
+    "@type": "EducationalOrganization",
+    name,
+    url,
+    logo,
+    description,
+    sameAs,
+    address: {
+      "@type": "PostalAddress",
+      streetAddress: "123 Đường Nguyễn Huệ",
+      addressLocality: "Quận 1",
+      addressRegion: "TP. Hồ Chí Minh",
+      postalCode: "70000",
+      addressCountry: "VN",
+    },
+    contactPoint: {
+      "@type": "ContactPoint",
+      telephone: "+84-123-456-789",
+      contactType: "customer service",
+      email: "info@chamchi.edu.vn",
+      availableLanguage: ["Vietnamese", "English"],
+    },
+  }
+
+  return (
+    <Script
+      id="organization-schema"
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(orgSchema) }}
+    />
+  )
+}
+
+interface CourseSchemaProps {
+  name: string
+  description: string
+  provider?: string
+  url?: string
+}
+
+export function CourseSchema({
+  name,
+  description,
+  provider = "Chamchi",
+  url = "https://chamchi.edu.vn",
+}: CourseSchemaProps) {
+  const courseSchema = {
+    "@context": "https://schema.org",
+    "@type": "Course",
+    name,
+    description,
+    provider: {
+      "@type": "Organization",
+      name: provider,
+      sameAs: url,
+    },
+  }
+
+  return (
+    <Script
+      id={`course-schema-${name.toLowerCase().replace(/\s+/g, "-")}`}
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(courseSchema) }}
+    />
+  )
+}
+
+interface FAQSchemaProps {
+  questions: {
+    question: string
+    answer: string
+  }[]
+}
+
+export function FAQSchema({ questions }: FAQSchemaProps) {
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: questions.map((q) => ({
+      "@type": "Question",
+      name: q.question,
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: q.answer,
+      },
+    })),
+  }
+
+  return (
+    <Script
+      id="faq-schema"
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+    />
+  )
+}
+
+interface WebsiteSchemaProps {
+  name?: string
+  url?: string
+  description?: string
+}
+
+export function WebsiteSchema({
+  name = "Chamchi - Trung tâm Anh ngữ STEAM",
+  url = "https://chamchi.edu.vn",
+  description = "Chamchi là trung tâm Anh ngữ hiện đại dạy tiếng Anh thông qua phương pháp STEAM cho học sinh từ lớp 6 trở lên.",
+}: WebsiteSchemaProps) {
+  const websiteSchema = {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    name,
+    url,
+    description,
+    potentialAction: {
+      "@type": "SearchAction",
+      target: {
+        "@type": "EntryPoint",
+        urlTemplate: `${url}/search?q={search_term_string}`,
+      },
+      "query-input": "required name=search_term_string",
+    },
+  }
+
+  return (
+    <Script
+      id="website-schema"
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }}
+    />
+  )
+}
+
+interface BreadcrumbSchemaProps {
+  items: {
+    name: string
+    url: string
+  }[]
+}
+
+export function BreadcrumbSchema({ items }: BreadcrumbSchemaProps) {
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: items.map((item, index) => ({
+      "@type": "ListItem",
+      position: index + 1,
+      name: item.name,
+      item: item.url,
+    })),
+  }
+
+  return (
+    <Script
+      id="breadcrumb-schema"
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+    />
+  )
+}
