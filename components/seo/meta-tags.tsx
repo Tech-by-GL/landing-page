@@ -13,7 +13,7 @@ export function MetaTags({
   title = "Chamchi - Trung tâm Anh ngữ STEAM",
   description = "Chamchi là trung tâm Anh ngữ hiện đại dạy tiếng Anh thông qua phương pháp STEAM cho học sinh từ lớp 6 trở lên. Chúng tôi chuẩn bị cho học sinh các chứng chỉ quốc tế như KET, PET và IELTS.",
   keywords = "Chamchi, tiếng Anh, STEAM, KET, PET, IELTS, trung tâm anh ngữ, học tiếng Anh, luyện thi chứng chỉ, tiếng Anh cho học sinh",
-  ogImage = "/og-image.jpg",
+  ogImage = "/og-image.png",
   ogType = "website",
   canonicalUrl = "https://chamchi.vn",
 }: MetaTagsProps) {

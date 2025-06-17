@@ -1,26 +1,11 @@
 import type { Metadata } from "next";
 import { HeroSection } from "@/components/hero-section";
-import { CoreValues } from "@/components/core-values";
-import { MethodologySection } from "@/components/methodology-section";
-import { SolutionsSection } from "@/components/solutions-section";
-import { ClassroomShowcase } from "@/components/classroom-showcase";
-import { Testimonials } from "@/components/testimonials";
 import { Courses } from "@/components/courses";
-import { BlogSection } from "@/components/blog-section";
-import { Features } from "@/components/features";
-import { AboutUs } from "@/components/about-us";
 import { FAQSchema } from "@/components/seo/structured-data";
-import TeamGallery from "@/components/team-gallery";
-import CenterCarousel from "@/components/carousel";
 import { GallerySection } from "@/components/gallery-section";
-import { SteamMethodSection } from "@/components/steam-method-section";
 import { SteamBriefSection } from "@/components/steam-section";
-import CompanyMarquee from "@/components/marquee";
 import { VideoCoreValue } from "@/components/video-core-values";
 import TestimonialsGrid from "@/components/testimonial-grid";
-import { EducationalPhilosophy } from "@/components/educational-philosophy";
-import { LearningRoadmap } from "@/components/learning-roadmap";
-import { CourseGallery } from "./tieng-anh-lop-6-9/page";
 import { Address } from "@/components/address";
 
 export const metadata: Metadata = {
@@ -48,7 +33,7 @@ export const metadata: Metadata = {
       "Học tiếng Anh hiệu quả với phương pháp STEAM độc đáo. Tỷ lệ đỗ chứng chỉ quốc tế lên đến 98%.",
     images: [
       {
-        url: "https://chamchi.vn/og-image-home.jpg",
+        url: "https://chamchi.vn/og-image.png",
         width: 1200,
         height: 630,
         alt: "Chamchi - Trung tâm Anh ngữ STEAM",

@@ -70,7 +70,7 @@ export const metadata: Metadata = {
     siteName: "Chamchi",
     images: [
       {
-        url: "https://chamchi.vn/og-image.jpg",
+        url: "https://chamchi.vn/og-image.png",
         width: 1200,
         height: 630,
         alt: "Chamchi - Trung tâm Anh ngữ STEAM",
@@ -86,7 +86,7 @@ export const metadata: Metadata = {
   //   title: "Chamchi - Trung tâm Anh ngữ STEAM",
   //   description:
   //     "Chamchi là trung tâm Anh ngữ hiện đại dạy tiếng Anh thông qua phương pháp STEAM cho học sinh từ lớp 6 trở lên.",
-  //   images: ["https://chamchi.vn/og-image.jpg"],
+  //   images: ["https://chamchi.vn/og-image.png"],
   //   creator: "@chamchi",
   //   site: "@chamchi",
   // },

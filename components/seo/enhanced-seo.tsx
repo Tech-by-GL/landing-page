@@ -55,7 +55,7 @@ export function EnhancedSEO({
   title,
   description,
   canonical = typeof window !== "undefined" ? window.location.href : "",
-  ogImage = "https://chamchi.vn/og-image.jpg",
+  ogImage = "https://chamchi.vn/og-image.png",
   ogType = "website",
   twitterCard = "summary_large_image",
   keywords = [],
