@@ -4,6 +4,7 @@ import { courses } from "@/components/courses";
 // app/ket/page.tsx
 import { EducationalPhilosophy } from "@/components/educational-philosophy";
 import { LearningRoadmap } from "@/components/learning-roadmap";
+import RegisterNow from "@/components/register";
 import TestimonialsGrid from "@/components/testimonial-grid";
 import { Testimonials } from "@/components/testimonials";
 import {
@@ -477,14 +478,16 @@ export default function KETPage() {
               </li>
             </ul>
 
-            <div className="mt-6">
+            {/* <div className="mt-6">
               <Link
                 href="#register"
                 className="inline-block bg-primary text-white text-sm font-semibold px-6 py-3 rounded-xl hover:bg-primary/90 transition"
               >
                 Đăng ký ngay cho bé
               </Link>
-            </div>
+            </div> */}
+
+            <RegisterNow />
           </div>
         </div>
       </section>

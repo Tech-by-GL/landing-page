@@ -86,7 +86,7 @@ export default function GoogleAICert() {
                     />
                   </svg>
                   <span className="ml-1 text-gray-500 md:ml-2">
-                    Chương trình Lấy lại Gốc Ngữ Pháp
+                    Khoá học AI với chứng chỉ Google AI Expert
                   </span>
                 </div>
               </li>
@@ -96,30 +96,28 @@ export default function GoogleAICert() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 items-center">
             <div className="order-2 lg:order-1">
               <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
-                Lấy lại Gốc Ngữ Pháp
+                Khoá học AI với Google
               </h1>
               <p className="text-lg text-gray-700 mb-8">
-                Dành cho học sinh từ lớp 6 đến lớp 9, chương trình giúp học viên
-                vừa <strong>đảm bảo điểm số trên lớp</strong> qua hệ thống ngữ
-                pháp nền tảng, vừa{" "}
-                <strong>phát triển tư duy ngôn ngữ theo chuẩn quốc tế</strong>{" "}
-                (KET/PET). Ngoài ra, các em được{" "}
-                <strong>luyện tập bài bản để thi vào lớp 10</strong> tại các
-                trường THPT hàng đầu tại TP.HCM.
+                Khóa học AI dành cho học sinh từ lớp 5, giúp học viên nắm vững
+                kiến thức và kỹ năng cần thiết để trở thành chuyên gia AI. Được
+                thiết kế bởi các chuyên gia hàng đầu, khóa học cung cấp lộ trình
+                học tập rõ ràng, từ cơ bản đến nâng cao, với chứng chỉ Google AI
+                Essentials công nhận năng lực.
               </p>
 
               <div className="grid grid-cols-2 gap-4 mb-8">
                 <div className="flex items-center">
                   <Clock className="h-5 w-5 text-primary mr-2" />
-                  <span className="text-gray-700">Thời gian: 12 tháng</span>
+                  <span className="text-gray-700">Thời gian: 1 tháng</span>
                 </div>
                 <div className="flex items-center">
                   <Calendar className="h-5 w-5 text-primary mr-2" />
-                  <span className="text-gray-700">Khai giảng: Mỗi tháng</span>
+                  <span className="text-gray-700">Khai giảng: 01/07/2025</span>
                 </div>
                 <div className="flex items-center">
                   <Users className="h-5 w-5 text-primary mr-2" />
-                  <span className="text-gray-700">Sĩ số lớp: 8 - 12 bạn</span>
+                  <span className="text-gray-700">Sĩ số lớp: 10 - 15 bạn</span>
                 </div>
                 <div className="flex items-center">
                   <svg
@@ -137,7 +135,7 @@ export default function GoogleAICert() {
                     <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
                   </svg>
                   <span className="text-gray-700">
-                    Cấp độ: A1-B1 Chuẩn Cambridge
+                    Chuẩn đầu ra: Chứng chỉ Google AI
                   </span>
                 </div>
               </div>
@@ -180,37 +178,13 @@ export default function GoogleAICert() {
             <div className="order-1 lg:order-2 relative">
               <div className="relative w-full h-[450px] rounded-2xl overflow-hidden shadow-xl transform transition-transform duration-500 hover:scale-105">
                 <Image
-                  src={"https://chamchi.sgp1.cdn.digitaloceanspaces.com/website/5.png"}
+                  src={
+                    "https://chamchi.sgp1.cdn.digitaloceanspaces.com/website/student-with-ai.png"
+                  }
                   alt={"Chương trình KET"}
                   fill
                   className="object-cover"
                 />
-              </div>
-
-              <div className="absolute -bottom-6 -right-6 bg-white p-4 rounded-lg shadow-lg">
-                <div className="flex items-center gap-2">
-                  <div className="bg-accent/20 p-2 rounded-full">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      strokeWidth="2"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      className="text-primary"
-                    >
-                      <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
-                      <polyline points="22 4 12 14.01 9 11.01"></polyline>
-                    </svg>
-                  </div>
-                  <div>
-                    <p className="font-bold text-gray-900">{100}%</p>
-                    <p className="text-sm text-gray-600">Tỷ lệ thành công</p>
-                  </div>
-                </div>
               </div>
             </div>
           </div>
@@ -223,16 +197,34 @@ export default function GoogleAICert() {
           <div className="lg:col-span-2 space-y-8">
             <div>
               <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-2">
-                Chương Trình Tiếng Anh Toàn Diện
+                Khoá học Trí Tuệ Nhân Tạo với Google AI Essentials
               </h2>
               <p className="text-gray-700 text-lg">
-                Chương trình thiết kế theo khung Cambridge quốc tế (Starters –
-                Movers – Flyers), dành cho học sinh từ{" "}
-                <strong>Lớp 1 đến Lớp 5</strong>. Mục tiêu là giúp học sinh{" "}
-                <strong>xây nền tiếng Anh sớm</strong>,{" "}
-                <strong>tự tin thi chứng chỉ</strong> và{" "}
-                <strong>hội nhập chương trình tăng cường – tích hợp</strong> ở
-                các cấp học sau.
+                Với sự hỗ trợ từ học viện đào tạo Trí Tuệ Nhân Tạo dành cho các
+                doanh nghiệp lớn Langcraft Education, khóa học này được thiết kế
+                để giúp học viên nắm vững kiến thức và kỹ năng cần thiết để sử
+                dụng AI hiệu quả trong học tập và công việc. Học viên sẽ được
+                học từ cơ bản đến nâng cao, bao gồm các chủ đề như:
+                <ul className="list-disc ml-6 mt-2 space-y-2">
+                  <li>
+                    <strong>Giới thiệu về AI:</strong> Hiểu rõ AI là gì, các ứng
+                    dụng và xu hướng hiện tại.
+                  </li>
+                  <li>
+                    <strong>Sử dụng ChatGPT hiệu quả:</strong> Cách đặt câu hỏi,
+                    tối ưu hóa kết quả và ứng dụng trong học tập.
+                  </li>
+                  <li>
+                    <strong>Sử dụng các công cụ AI để học tiếng Anh:</strong>{" "}
+                    với các công cụ như Grammarly, Google Translate, và các ứng
+                    dụng học tiếng Anh khác.
+                  </li>
+                  <li>
+                    <strong>Chứng chỉ Google AI Essentials:</strong> Đạt được
+                    chứng chỉ công nhận năng lực AI từ Google, với sự hướng dẫn
+                    trực tiếp từ đội ngũ giáo viên.
+                  </li>
+                </ul>
               </p>
             </div>
 
@@ -240,89 +232,49 @@ export default function GoogleAICert() {
 
             <div>
               <h3 className="text-2xl  font-bold text-gray-900 mb-5 mt-16">
-                Thế mạnh của
-                <span className="text-primary font-bold ml-1">
-                  Anh Ngữ Chăm Chỉ
-                </span>
+                Kế hoạch học tập tại
+                <span className="text-primary font-bold ml-1">Chăm Chỉ</span>
               </h3>
               {/* <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-5">
                 Vì sao nên thi Starters – Movers – Flyers?
               </h2> */}
               <ul className="list-none text-gray-700 text-base space-y-3 ml-2">
                 <li>
-                  <strong>
-                    Ngữ pháp song song với chương trình phổ thông:
-                  </strong>{" "}
-                  đảm bảo điểm kiểm tra, học kỳ.
+                  <strong>Ngày 1:</strong> Học sử dụng ChatGPT cơ bản – cách đặt
+                  câu hỏi và nhận câu trả lời.
                 </li>
                 <li>
-                  <strong>Chứng chỉ quốc tế:</strong> chuẩn bị và thi KET/PET
-                  theo khung CEFR A2-B1.
+                  <strong>Ngày 2:</strong> Học và thực hành các công cụ hỗ trợ,
+                  chuẩn bị có kỳ thi chứng chỉ Google AI Essentials.
                 </li>
                 <li>
-                  <strong>Ôn luyện thi lớp 10:</strong> bám sát dạng đề, từ vựng
-                  và kỹ năng đọc hiểu, viết bài luận.
-                </li>
-                <li>
-                  <strong>Chương trình học tích hợp STEM:</strong> phát triển tư
-                  duy logic – phản biện – trình bày.
-                </li>
-                <li>
-                  <strong>Phù hợp mọi trình độ:</strong> từ mất gốc đến khá
-                  giỏi, có lộ trình cá nhân hóa.
+                  <strong>Ngày 3:</strong> Học sinh thi chứng chỉ Google AI
+                  Essentials, nhận chứng chỉ và đánh giá kết quả.
                 </li>
               </ul>
             </div>
 
-            {/* <div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-5 mt-14">
-                Thế mạnh của{" "}
-                <span className="text-primary font-bold ml-1">Chăm Chỉ</span>
-              </h3>
-              <ul className="list-disc text-gray-700 text-base space-y-3 ml-6">
-                <li>
-                  <strong className="capitalize ">
-                    ĐỘI NGŨ GIÁO VIÊN TẬN TÂM:
-                  </strong>{" "}
-                  Đội ngũ chuyên sâu và tận tâm, giàu kinh nghiệm.
-                </li>
-                <li>
-                  <strong>THEO DÕI VÀ BÁO CÁO:</strong> Đánh giá định kỳ – báo
-                  cáo chi tiết – điều chỉnh lộ trình riêng cho từng em.
-                </li>
-                <li>
-                  <strong>CHI PHÍ HỢP LÝ:</strong> Mức học phí phù hợp, cam kết
-                  chất lượng và dịch vụ vượt mong đợi.
-                </li>
-              </ul>
-            </div> */}
-
             <div className="space-y-4 mt-10">
               {[
                 {
-                  title: "📘 Chứng chỉ KET/PET có thực sự cần thiết?",
+                  title: "📘 Vì sao phải học cách dùng AI?",
                   content:
-                    "KET và PET là hai chứng chỉ quốc tế của Cambridge tương ứng với trình độ A2 và B1. Đây là nền tảng vững chắc cho học sinh cấp 2 muốn xét tuyển vào các lớp tăng cường, lớp tích hợp, hoặc tiếp tục học lên IELTS sau này. Nhiều trường THCS và THPT ở TP.HCM xem đây là một lợi thế trong tuyển sinh.",
+                    " AI đang trở thành công cụ không thể thiếu trong học tập và công việc. Việc biết cách sử dụng AI sẽ giúp học sinh nâng cao hiệu quả học tập, tiết kiệm thời gian và mở rộng khả năng sáng tạo. Học sinh sẽ được hướng dẫn cách sử dụng AI một cách an toàn và hiệu quả.",
                 },
                 {
-                  title: "📊 Làm sao biết con có tiến bộ?",
+                  title: "📊 Con tôi lớp 4 thì có đi học được không?",
                   content:
-                    "Chúng tôi đánh giá tiến độ hàng tháng thông qua các bài kiểm tra ngữ pháp – kỹ năng – từ vựng theo dạng đề thật. Phụ huynh được gửi báo cáo cá nhân định kỳ, kèm theo tư vấn từ giáo viên để điều chỉnh chiến lược học phù hợp.",
+                    "Các học sinh từ lớp 5 sẽ được coi là phù hợp với chương trình. Tuy nhiên, nếu như học sinh có khả năng sử dụng máy tính thông thạo, thì hoàn toàn có thể tham gia chương trình! Phụ huynh vui lòng liên hệ với trung tâm qua số điện thoại để được tư vấn cụ thể.",
                 },
                 {
-                  title: "📚 Học bằng giáo trình gì?",
+                  title: "📚 Tôi có thể tham gia cùng con không?",
                   content:
-                    "Chương trình tích hợp giáo trình Cambridge chính thống (KET/PET), bài luyện thi tuyển sinh lớp 10, cùng học liệu học thuật và kỹ năng mềm. Ngoài ra, học sinh còn thực hành các dự án STEAM để nâng cao phản xạ và khả năng trình bày.",
+                    "Chương trình được thiết kế dành riêng cho học sinh, tuy nhiên phụ huynh có thể tham gia cùng con trong các buổi học để hỗ trợ và theo dõi quá trình học tập. Chúng tôi khuyến khích sự đồng hành của phụ huynh để tạo động lực cho học sinh.",
                 },
                 {
-                  title: "👨‍👩‍👧‍👦 Phụ huynh có thể đồng hành không?",
+                  title: "💰 Học phí đã bao gồm tính chỉ chưa?",
                   content:
-                    "Chúng tôi tạo cầu nối chặt chẽ giữa giáo viên – phụ huynh – học sinh thông qua sổ liên lạc điện tử, đánh giá hàng tháng, họp phụ huynh định kỳ và kênh tư vấn trực tiếp. Phụ huynh hoàn toàn yên tâm theo dõi hành trình học tập của con.",
-                },
-                {
-                  title: "💰 Học phí có phù hợp không?",
-                  content:
-                    "Chăm Chỉ cung cấp nhiều gói học phù hợp cho từng mục tiêu: lấy chứng chỉ quốc tế, ôn thi lớp 10, hoặc học tăng cường. Lộ trình rõ ràng, chi phí minh bạch và có chính sách hỗ trợ học sinh giỏi hoặc học sinh có hoàn cảnh đặc biệt.",
+                    "Học phí cho khóa học AI với Google AI Essentials là 500.000đ, đã bao gồm toàn bộ chi phí học tập, các dụng cụ cần thiết như máy tính, và thi chứng chỉ Google AI Essentials. Học sinh sẽ nhận được chứng chỉ sau khi hoàn thành khóa học.",
                 },
               ].map((item, index) => (
                 <details
@@ -363,12 +315,11 @@ export default function GoogleAICert() {
                 {/* Title */}
                 <div>
                   <h4 className="text-2xl font-bold text-gray-900 mb-1">
-                    Tiếng Anh Trẻ Em Toàn Diện
+                    Khoá học AI với Google
                   </h4>
                   <p className="text-sm text-gray-600">
-                    Chương trình thiết kế theo khung Cambridge, với môi trường
-                    học tập giúp các em phát triển toàn diện, hướng tới các tính
-                    chỉ quốc tế Starters – Movers – Flyers.
+                    Chứng chỉ Google AI Essentials – Nền tảng vững chắc cho các
+                    bạn học sinh trong thời đại của Trí Tuệ Nhân Tạo.
                   </p>
                 </div>
 
@@ -379,16 +330,17 @@ export default function GoogleAICert() {
                   </h5>
                   <ul className="text-sm text-gray-800 space-y-1">
                     <li>
-                      <strong>Độ tuổi:</strong> 6–10 tuổi
+                      <strong>Độ tuổi:</strong> Từ lớp 5 trở lên
                     </li>
                     <li>
-                      <strong>Trình độ:</strong> A1 Starters đến A2 Flyers
+                      <strong>Trình độ:</strong> Không yêu cầu
                     </li>
                     <li>
-                      <strong>Sĩ số lớp:</strong> Tối đa 12 học viên
+                      <strong>Sĩ số lớp:</strong> Tối đa 15 học viên
                     </li>
                     <li>
-                      <strong>Học phí:</strong> Từ 1.000.000đ / tháng
+                      <strong>Học phí:</strong> 500.000đ / Khoá (đã bao gồm tính
+                      chỉ)
                     </li>
                   </ul>
                 </div>
@@ -405,28 +357,13 @@ export default function GoogleAICert() {
                   </p>
 
                   {/*INput phone number   */}
-                  <div>
-                    {/* <label
-                      htmlFor="phone"
-                      className="block text-sm font-medium text-gray-700 mb-1 mt-2"
-                    >
-                      Số điện thoại của bạn
-                    </label> */}
-                    <input
-                      type="tel"
-                      id="phone"
-                      name="phone"
-                      placeholder="Nhập số điện thoại"
-                      className="mt-2 w-full px-4 py-2 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent text-sm"
-                    />
-                  </div>
-
-                  <Link
-                    href="#register"
+                  <CallbackForm />
+                  {/* <Link
+                    href=""
                     className=" mt-2 w-full block text-center px-6 py-2 bg-primary text-white text-sm font-semibold rounded-xl hover:bg-primary/90 transition"
                   >
                     Nhận tư vấn miễn phí
-                  </Link>
+                  </Link> */}
                 </div>
               </div>
             </div>
@@ -439,7 +376,7 @@ export default function GoogleAICert() {
           {/* Hình ảnh học viên */}
           <div className="relative w-full h-[450px] rounded-2xl overflow-hidden shadow-xl transform transition-transform duration-500 hover:scale-105">
             <Image
-              src="https://chamchi.sgp1.cdn.digitaloceanspaces.com/website/nguphap.png" // 👉 Thay bằng ảnh thật
+              src="https://chamchi.sgp1.cdn.digitaloceanspaces.com/website/ket-ai-classroom.png" // 👉 Thay bằng ảnh thật
               alt="Học viên đạt Flyers tại Chăm Chỉ"
               layout="fill"
               objectFit="cover"
@@ -451,43 +388,42 @@ export default function GoogleAICert() {
           {/* Nội dung câu chuyện */}
           <div>
             <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
-              Lấy lại gốc ngữ pháp tiếng Anh chỉ sau 6 tháng
+              Câu chuyện của AI và học tiếng Anh
             </h2>
             <p className="text-base text-gray-700 mb-6">
-              Bạn <strong>Minh Phương (lớp 9 - THCS Trường Thọ)</strong> bắt đầu
-              học ở Chăm Chỉ với điểm số tiếng Anh không ổn định, thường xuyên
-              bị điểm kém. Bạn đã tìm nhiều nơi học nhưng không cải thiện được.
-              Sau khi đăng ký khóa học Lấy lại Gốc Ngữ Pháp, Minh Phương đã có
-              những tiến bộ vượt bậc. Chỉ sau 6 tháng, bạn đã lấy lại gốc ngữ
-              pháp và tự tin hơn trong việc sử dụng tiếng Anh.
+              Tại Chăm Chỉ, chúng tôi không chỉ dạy tiếng Anh mà còn giúp học
+              viên hiểu và sử dụng AI một cách hiệu quả. Khóa học AI với Google
+              AI Essentials sẽ trang bị cho học viên những kỹ năng cần thiết để
+              sử dụng AI trong học tập và cuộc sống hàng ngày. Học viên sẽ được
+              hướng dẫn cách sử dụng các công cụ AI phổ biến như ChatGPT, Google
+              Translate, và nhiều ứng dụng khác để nâng cao khả năng tiếng Anh
+              của mình.
             </p>
 
             <ul className="list-none space-y-2 text-gray-800 text-sm">
               <li>
-                <strong>Kết quả:</strong> Lấy lại gốc ngữ pháp Tiếng Anh, sẵn
-                sàng học chứng chỉ Quốc Tế KET / PET
+                <strong>Kết quả:</strong> Đầu ra chuẩn quốc tế: Chứng chỉ Google AI Essentials
               </li>
               <li>
-                <strong>Thời gian học:</strong> 6 tháng
+                <strong>Thời gian học:</strong> 1 tháng
               </li>
-              <li>{/* <strong>Phụ huynh đánh giá:</strong> - */}</li>
             </ul>
 
-            <div className="mt-6">
+            {/* <div className="mt-6">
               <Link
                 href="#register"
                 className="inline-block bg-primary text-white text-sm font-semibold px-6 py-3 rounded-xl hover:bg-primary/90 transition"
               >
                 Đăng ký ngay cho bé
               </Link>
-            </div>
+            </div> */}
+            <RegisterNow />
           </div>
         </div>
       </section>
 
-      {/* <BookCarousel /> */}
 
-      {/* <CourseGallery /> */}
+      <CourseGallery />
 
       {/* <LearningRoadmap /> */}
       {/* <EducationalPhilosophy /> */}
@@ -495,7 +431,7 @@ export default function GoogleAICert() {
       <TestimonialsGrid />
 
       {/* CTA */}
-     <OtherCourses name="Chứng Chỉ Google AI" />
+      <OtherCourses name="Chứng Chỉ Google AI" />
 
       <style jsx>{`
         .animate-marquee {
@@ -638,6 +574,9 @@ import { useRef, useEffect } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { CourseGallery } from "../tieng-anh-lop-6-9/69";
 import { OtherCourses } from "../tieng-anh-tre-em/page";
+import { sendTelegramMessage } from "@/components/telegram";
+import CallbackForm from "@/components/call-back-form";
+import RegisterNow from "@/components/register";
 // import Image from "next/image";
 
 const books = [

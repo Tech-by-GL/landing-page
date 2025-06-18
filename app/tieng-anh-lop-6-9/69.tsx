@@ -155,7 +155,9 @@ export default function ClassFrom6to9() {
             <div className="order-1 lg:order-2 relative">
               <div className="relative w-full h-[450px] rounded-2xl overflow-hidden shadow-xl transform transition-transform duration-500 hover:scale-105">
                 <Image
-                  src={"https://chamchi.sgp1.cdn.digitaloceanspaces.com/website/2.png"}
+                  src={
+                    "https://chamchi.sgp1.cdn.digitaloceanspaces.com/website/2.png"
+                  }
                   alt={"Chương trình KET"}
                   fill
                   className="object-cover"
@@ -488,7 +490,7 @@ export default function ClassFrom6to9() {
 
       {/* <BookCarousel /> */}
 
-      <CourseGallery />
+      {/* <CourseGallery /> */}
 
       {/* <LearningRoadmap /> */}
       {/* <EducationalPhilosophy /> */}
@@ -657,69 +659,126 @@ const courseImages = [
     alt: "Học sinh trong lớp học tương tác",
   },
   {
-    src: "https://chamchi.sgp1.cdn.digitaloceanspaces.com/website/class-large.jpg",
+    src: "https://chamchi.sgp1.cdn.digitaloceanspaces.com/website/deep-work.jpg",
     alt: "Học sinh trình bày dự án STEM",
   },
   {
-    src: "https://chamchi.sgp1.cdn.digitaloceanspaces.com/website/class-large.jpg",
+    src: "https://chamchi.sgp1.cdn.digitaloceanspaces.com/website/teaching-computer.jpg",
     alt: "Luyện thi KET PET cùng giáo viên",
   },
   {
-    src: "https://chamchi.sgp1.cdn.digitaloceanspaces.com/website/class-large.jpg",
+    src: "https://chamchi.sgp1.cdn.digitaloceanspaces.com/website/teacher-teaching.jpg",
     alt: "Hoạt động nhóm tiếng Anh",
   },
   {
-    src: "https://chamchi.sgp1.cdn.digitaloceanspaces.com/website/class-large.jpg",
+    src: "https://chamchi.sgp1.cdn.digitaloceanspaces.com/website/ielts-ai-work.jpg",
     alt: "Hoạt động nhóm tiếng Anh",
   },
   {
-    src: "https://chamchi.sgp1.cdn.digitaloceanspaces.com/website/class-large.jpg",
+    src: "https://chamchi.sgp1.cdn.digitaloceanspaces.com/website/ket-ai-work-2.jpg",
+    alt: "Hoạt động nhóm tiếng Anh",
+  },
+  {
+    src: "https://chamchi.sgp1.cdn.digitaloceanspaces.com/website/ket-ai-work-3.jpg",
+    alt: "Hoạt động nhóm tiếng Anh",
+  },
+  {
+    src: "https://chamchi.sgp1.cdn.digitaloceanspaces.com/website/ket-ai-work-4.jpg",
+    alt: "Hoạt động nhóm tiếng Anh",
+  },
+  {
+    src: "https://chamchi.sgp1.cdn.digitaloceanspaces.com/website/teaching-computer.jpg",
+    alt: "Hoạt động nhóm tiếng Anh",
+  },
+  {
+    src: "https://chamchi.sgp1.cdn.digitaloceanspaces.com/website/small-ai-room-2.png",
+    alt: "",
+  },
+
+  {
+    src: "https://chamchi.sgp1.cdn.digitaloceanspaces.com/website/big-lab-2.png",
+    alt: "Hoạt động nhóm tiếng Anh",
+  },
+
+  {
+    src: "https://chamchi.sgp1.cdn.digitaloceanspaces.com/website/ielts-ai-5.png",
+    alt: "Hoạt động nhóm tiếng Anh",
+  },
+
+  {
+    src: "https://chamchi.sgp1.cdn.digitaloceanspaces.com/website/ielts-ai-6.png",
+    alt: "Hoạt động nhóm tiếng Anh",
+  },
+
+  {
+    src: "https://chamchi.sgp1.cdn.digitaloceanspaces.com/website/big-lab.png",
+    alt: "Hoạt động nhóm tiếng Anh",
+  },
+
+  {
+    src: "https://chamchi.sgp1.cdn.digitaloceanspaces.com/website/ielts-ai-7.png",
+    alt: "Hoạt động nhóm tiếng Anh",
+  },
+
+  {
+    src: "https://chamchi.sgp1.cdn.digitaloceanspaces.com/website/ielts-ai-8.png",
     alt: "Hoạt động nhóm tiếng Anh",
   },
 ];
 
 export function CourseGallery() {
   return (
-    <section className="w-screen bg-gradient-to-br from-primary/10 via-white to-accent/20 flex items-center justify-center px-4 py-12 overflow-hidden">
-      <div className="max-w-screen-xl w-full grid grid-cols-1 lg:grid-cols-3 gap-8 items-center">
-        {/* Description */}
-        <div className="lg:col-span-1 text-gray-700 text-base leading-relaxed text-center lg:text-left px-2">
-          <h2 className="text-xl md:text-2xl font-bold text-gray-900 mb-4">
-            Lớp học thân thiện - hiện đại
+    <section className="w-screen bg-gradient-to-br from-primary/10 via-white to-accent/20 px-4 py-12 overflow-hidden">
+    <div className="max-w-screen-xl mx-auto flex flex-col lg:flex-row gap-10 items-start">
+      {/* Sticky text bên trái */}
+      <div className="lg:w-1/3 lg:sticky top-24 self-start">
+        <div className="text-gray-700 text-base leading-relaxed space-y-4 text-center lg:text-left">
+          <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-2">
+            Học AI với <span className="text-primary">Chăm Chỉ</span>
           </h2>
+  
+          <div>
+            Chăm Chỉ sở hữu cơ sở vật chất hiện đại:
+            <ul className="list-disc ml-5 mt-2">
+              <li>Phòng học rộng rãi, thoáng mát</li>
+              <li>Trang bị máy chiếu, bảng tương tác thông minh</li>
+              <li>Máy tính ASUS Station cho mỗi học viên</li>
+            </ul>
+          </div>
+  
           <p>
-            Những hình ảnh dưới đây phản ánh phương pháp học hiện đại tại Chăm
-            Chỉ – nơi học sinh được truyền cảm hứng, rèn luyện toàn diện cả về
-            kỹ năng tiếng Anh lẫn tư duy phản biện thông qua lớp học tương tác,
-            dự án STEM, hoạt động nhóm và luyện thi cùng giáo viên. Mỗi trải
-            nghiệm đều góp phần xây dựng nền tảng vững chắc cho sự phát triển
-            học thuật và cá nhân.
+            🚀 Mỗi lớp học được thiết kế để tạo môi trường thoải mái và hiệu quả,
+            nơi học viên được tham gia nhóm, trình bày dự án và thực hành trực tiếp
+            với giáo viên.
+          </p>
+  
+          <p>
+            🚀 Đội ngũ giáo viên giàu kinh nghiệm cam kết giúp học viên phát triển
+            tư duy phản biện, sáng tạo và kỹ năng làm việc nhóm — giúp các em tự
+            tin bước vào tương lai.
           </p>
         </div>
-
-        {/* Image Grid */}
-        <div className="lg:col-span-2 grid grid-cols-3 gap-4 h-full auto-rows-[160px]">
-          {courseImages.map((img, index) => (
-            <div
-              key={index}
-              className={`relative overflow-hidden rounded-xl shadow-md transition-transform duration-500 hover:scale-105 
-        ${index === 0 ? "col-span-2 row-span-2" : ""}
-        ${index === 1 ? "col-span-1 row-span-1" : ""}
-        ${index === 2 ? "col-span-1 row-span-2" : ""}
-        ${index === 3 ? "col-span-2 row-span-1" : ""}
-      `}
-            >
-              <Image
-                src={img.src}
-                alt={img.alt}
-                layout="fill"
-                objectFit="cover"
-                className="rounded-xl"
-              />
-            </div>
-          ))}
-        </div>
       </div>
-    </section>
+  
+      {/* Masonry grid ảnh giữ nguyên */}
+      <div className="lg:w-2/3 columns-1 sm:columns-2 md:columns-3 gap-4 space-y-4">
+        {courseImages.map((img, index) => (
+          <div
+            key={index}
+            className="overflow-hidden rounded-xl shadow-md break-inside-avoid relative w-full"
+          >
+            <Image
+              src={img.src}
+              alt={img.alt}
+              width={800}
+              height={600}
+              className="w-full h-auto object-cover rounded-xl hover:scale-105 transition-transform duration-300"
+            />
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+  
   );
 }

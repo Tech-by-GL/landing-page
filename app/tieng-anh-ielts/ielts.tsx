@@ -138,7 +138,7 @@ export default function IELTSPage() {
                       <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
                     </svg>
                     <span className="text-gray-700">
-                      Cấp độ: A1-B1 Chuẩn Cambridge
+                      Cấp độ: B1-C2 Chuẩn Cambridge
                     </span>
                   </div>
                 </div>
