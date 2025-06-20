@@ -17,6 +17,8 @@ import {
 } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
+import { OtherCourses } from "../tieng-anh-tre-em/children-english";
+import RegisterNow from "@/components/register";
 
 export default function ClassFrom6to9() {
   return (
@@ -143,10 +145,8 @@ export default function ClassFrom6to9() {
                 </div>
               </div>
               <div className="flex flex-col sm:flex-row gap-4">
-                <Link href="#contact" className="btn-primary text-center">
-                  Đăng ký ngay
-                </Link>
-                <Link href="#curriculum" className="btn-accent text-center">
+                <RegisterNow title="Đăng ký tư vấn miễn phí" color="" />
+                <Link href="#curriculum" className="btn-accent text-sm font-bold px-6 py-3 rounded-xl transition">
                   Xem chương trình học
                 </Link>
               </div>
@@ -168,7 +168,7 @@ export default function ClassFrom6to9() {
         </div>
       </section>
 
-      <section className="py-20 bg-white">
+      <section className="py-20 bg-white" id="curriculum">
         <div className="container-custom grid grid-cols-1 lg:grid-cols-3 gap-8">
           {/* Left Content */}
           <div className="lg:col-span-2 space-y-8">
@@ -349,11 +349,6 @@ export default function ClassFrom6to9() {
                   <h5 className="text-sm font-semibold text-gray-500 uppercase mb-2">
                     Tư vấn miễn phí
                   </h5>
-                  <p className="text-sm text-gray-600">
-                    Để được tư vấn miễn phí về chương trình, vui lòng để lại số
-                    điện thoại. Anh Ngữ Chăm Chỉ sẽ liên hệ với quý phụ huynh
-                    trong thời gian sớm nhất.
-                  </p>
 
                   {/*INput phone number   */}
                   <div>
@@ -411,7 +406,7 @@ export default function ClassFrom6to9() {
               em tự tin vượt qua kỳ thi quan trọng này. Chăm Chỉ tự hào về em!
             </p>
 
-            <ul className="list-none space-y-2 text-gray-800 text-sm">
+            <ul className="list-none space-y-2 text-gray-800 text-sm mb-5">
               <li>
                 <strong>Kết quả:</strong> 9.25 điểm môn Tiếng Anh
               </li>
@@ -425,14 +420,19 @@ export default function ClassFrom6to9() {
               </li>
             </ul>
 
-            <div className="mt-6">
+            {/* <div className="mt-6">
               <Link
                 href="#register"
                 className="inline-block bg-yellow-500 text-white text-sm font-semibold px-6 py-3 rounded-xl hover:bg-yellow-400 transition"
               >
-                Đăng ký kiểm tra trình độ Ngữ Pháp
+                
               </Link>
-            </div>
+            </div> */}
+
+            <RegisterNow
+              title="Kiểm tra trình độ Ngữ Pháp Miễn Phí"
+              color="yellow"
+            />
           </div>
         </div>
 
@@ -451,7 +451,7 @@ export default function ClassFrom6to9() {
               này.
             </p>
 
-            <ul className="list-none space-y-2 text-gray-800 text-sm">
+            <ul className="list-none space-y-2 text-gray-800 text-sm mb-5">
               <li>
                 <strong>Kết quả:</strong> KET điểm 127/150
               </li>
@@ -464,14 +464,15 @@ export default function ClassFrom6to9() {
               </li>
             </ul>
 
-            <div className="mt-6">
+            {/* <div className="mt-6">
               <Link
                 href="#register"
                 className="inline-block bg-yellow-500 text-white text-sm font-semibold px-6 py-3 rounded-xl hover:bg-yellow-400 transition"
               >
                 Tư Vấn Miễn Phí
               </Link>
-            </div>
+            </div> */}
+            <RegisterNow title=" Tư Vấn Miễn Phí " color="yellow" />
           </div>
           {/* Hình ảnh học viên */}
           <div className="relative w-full h-[450px] rounded-2xl overflow-hidden shadow-xl transform transition-transform duration-500 hover:scale-105">
@@ -496,27 +497,7 @@ export default function ClassFrom6to9() {
       {/* <EducationalPhilosophy /> */}
       {/* Material & Book's marquee */}
       <TestimonialsGrid />
-
-      {/* CTA */}
-      <section className="py-16 bg-primary/10 text-center">
-        <div className="container-custom max-w-2xl mx-auto">
-          <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
-            Ready to Get Started?
-          </h2>
-          <p className="text-lg text-gray-700 mb-6">
-            Explore the full KET course or talk to our advisor to help you find
-            the right level.
-          </p>
-          <div className="flex justify-center gap-4 flex-col sm:flex-row">
-            <Link href="/courses/luyen-thi-ket" className="btn-primary">
-              View Full KET Course
-            </Link>
-            <Link href="/#contact" className="btn-accent">
-              Register for Consultation
-            </Link>
-          </div>
-        </div>
-      </section>
+      <OtherCourses name="Tiếng Anh Lớp 6-9" />
 
       <style jsx>{`
         .animate-marquee {
@@ -729,56 +710,55 @@ const courseImages = [
 export function CourseGallery() {
   return (
     <section className="w-screen bg-gradient-to-br from-primary/10 via-white to-accent/20 px-4 py-12 overflow-hidden">
-    <div className="max-w-screen-xl mx-auto flex flex-col lg:flex-row gap-10 items-start">
-      {/* Sticky text bên trái */}
-      <div className="lg:w-1/3 lg:sticky top-24 self-start">
-        <div className="text-gray-700 text-base leading-relaxed space-y-4 text-center lg:text-left">
-          <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-2">
-            Học AI với <span className="text-primary">Chăm Chỉ</span>
-          </h2>
-  
-          <div>
-            Chăm Chỉ sở hữu cơ sở vật chất hiện đại:
-            <ul className="list-disc ml-5 mt-2">
-              <li>Phòng học rộng rãi, thoáng mát</li>
-              <li>Trang bị máy chiếu, bảng tương tác thông minh</li>
-              <li>Máy tính ASUS Station cho mỗi học viên</li>
-            </ul>
+      <div className="max-w-screen-xl mx-auto flex flex-col lg:flex-row gap-10 items-start">
+        {/* Sticky text bên trái */}
+        <div className="lg:w-1/3 lg:sticky top-24 self-start">
+          <div className="text-gray-700 text-base leading-relaxed space-y-4 text-center lg:text-left">
+            <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-2">
+              Học AI với <span className="text-primary">Chăm Chỉ</span>
+            </h2>
+
+            <div>
+              Chăm Chỉ sở hữu cơ sở vật chất hiện đại:
+              <ul className="list-disc ml-5 mt-2">
+                <li>Phòng học rộng rãi, thoáng mát</li>
+                <li>Trang bị máy chiếu, bảng tương tác thông minh</li>
+                <li>Máy tính ASUS Station cho mỗi học viên</li>
+              </ul>
+            </div>
+
+            <p>
+              🚀 Mỗi lớp học được thiết kế để tạo môi trường thoải mái và hiệu
+              quả, nơi học viên được tham gia nhóm, trình bày dự án và thực hành
+              trực tiếp với giáo viên.
+            </p>
+
+            <p>
+              🚀 Đội ngũ giáo viên giàu kinh nghiệm cam kết giúp học viên phát
+              triển tư duy phản biện, sáng tạo và kỹ năng làm việc nhóm — giúp
+              các em tự tin bước vào tương lai.
+            </p>
           </div>
-  
-          <p>
-            🚀 Mỗi lớp học được thiết kế để tạo môi trường thoải mái và hiệu quả,
-            nơi học viên được tham gia nhóm, trình bày dự án và thực hành trực tiếp
-            với giáo viên.
-          </p>
-  
-          <p>
-            🚀 Đội ngũ giáo viên giàu kinh nghiệm cam kết giúp học viên phát triển
-            tư duy phản biện, sáng tạo và kỹ năng làm việc nhóm — giúp các em tự
-            tin bước vào tương lai.
-          </p>
+        </div>
+
+        {/* Masonry grid ảnh giữ nguyên */}
+        <div className="lg:w-2/3 columns-1 sm:columns-2 md:columns-3 gap-4 space-y-4">
+          {courseImages.map((img, index) => (
+            <div
+              key={index}
+              className="overflow-hidden rounded-xl shadow-md break-inside-avoid relative w-full"
+            >
+              <Image
+                src={img.src}
+                alt={img.alt}
+                width={800}
+                height={600}
+                className="w-full h-auto object-cover rounded-xl hover:scale-105 transition-transform duration-300"
+              />
+            </div>
+          ))}
         </div>
       </div>
-  
-      {/* Masonry grid ảnh giữ nguyên */}
-      <div className="lg:w-2/3 columns-1 sm:columns-2 md:columns-3 gap-4 space-y-4">
-        {courseImages.map((img, index) => (
-          <div
-            key={index}
-            className="overflow-hidden rounded-xl shadow-md break-inside-avoid relative w-full"
-          >
-            <Image
-              src={img.src}
-              alt={img.alt}
-              width={800}
-              height={600}
-              className="w-full h-auto object-cover rounded-xl hover:scale-105 transition-transform duration-300"
-            />
-          </div>
-        ))}
-      </div>
-    </div>
-  </section>
-  
+    </section>
   );
 }

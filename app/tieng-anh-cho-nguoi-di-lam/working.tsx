@@ -17,7 +17,6 @@ import {
 import Image from "next/image";
 import Link from "next/link";
 
-
 export default function WorkingPeoplePage() {
   return (
     <div className="bg-gray-50">
@@ -169,10 +168,8 @@ export default function WorkingPeoplePage() {
                 </div>
               </div> */}
               <div className="flex flex-col sm:flex-row gap-4">
-                <Link href="#contact" className="btn-primary text-center">
-                  Đăng ký ngay
-                </Link>
-                <Link href="#curriculum" className="btn-accent text-center">
+                <RegisterNow title="Đăng ký tư vấn miễn phí" color="" />
+                <Link href="#curriculum" className="btn-accent text-sm font-bold px-6 py-3 rounded-xl transition">
                   Xem chương trình học
                 </Link>
               </div>
@@ -181,7 +178,9 @@ export default function WorkingPeoplePage() {
             <div className="order-1 lg:order-2 relative">
               <div className="relative w-full h-[450px] rounded-2xl overflow-hidden shadow-xl transform transition-transform duration-500 hover:scale-105">
                 <Image
-                  src={"https://chamchi.sgp1.cdn.digitaloceanspaces.com/website/6.png"}
+                  src={
+                    "https://chamchi.sgp1.cdn.digitaloceanspaces.com/website/6.png"
+                  }
                   alt={"Chương trình KET"}
                   fill
                   className="object-cover"
@@ -218,7 +217,7 @@ export default function WorkingPeoplePage() {
         </div>
       </section>
 
-      <section className="py-20 bg-white">
+      <section className="py-20 bg-white" id="curriculum">
         <div className="container-custom grid grid-cols-1 lg:grid-cols-3 gap-8">
           {/* Left Content */}
           <div className="lg:col-span-2 space-y-8">
@@ -399,11 +398,6 @@ export default function WorkingPeoplePage() {
                   <h5 className="text-sm font-semibold text-gray-500 uppercase mb-2">
                     Tư vấn miễn phí
                   </h5>
-                  <p className="text-sm text-gray-600">
-                    Để được tư vấn miễn phí về chương trình, vui lòng để lại số
-                    điện thoại. Anh Ngữ Chăm Chỉ sẽ liên hệ với quý phụ huynh
-                    trong thời gian sớm nhất.
-                  </p>
 
                   {/*INput phone number   */}
                   <div>
@@ -461,7 +455,7 @@ export default function WorkingPeoplePage() {
               với đồng nghiệp và khách hàng quốc tế, mở rộng cơ hội nghề nghiệp.
             </p>
 
-            <ul className="list-none space-y-2 text-gray-800 text-sm">
+            <ul className="list-none space-y-2 text-gray-800 text-sm mb-8">
               <li>
                 <strong>Kết quả:</strong> Đạt bằng A
               </li>
@@ -469,19 +463,15 @@ export default function WorkingPeoplePage() {
                 <strong>Thời gian học:</strong> 14 tháng
               </li>
               <li>
-                <strong>Phụ huynh đánh giá:</strong> 
-                Chăm Chỉ đã giúp tôi cải thiện kỹ năng giao tiếp, tự tin hơn trong công việc. Tôi rất hài lòng với sự tiến bộ của bản thân
+                <strong>Phụ huynh đánh giá:</strong>
+                Chăm Chỉ đã giúp tôi cải thiện kỹ năng giao tiếp, tự tin hơn
+                trong công việc. Tôi rất hài lòng với sự tiến bộ của bản thân
               </li>
             </ul>
 
-            <div className="mt-6">
-              <Link
-                href="#register"
-                className="inline-block bg-primary text-white text-sm font-semibold px-6 py-3 rounded-xl hover:bg-primary/90 transition"
-              >
-                Đăng ký ngay cho bé
-              </Link>
-            </div>
+            <RegisterNow
+              title="Đăng ký kiểm tra đầu vào miễn phí"
+              color="" />
           </div>
         </div>
       </section>
@@ -496,7 +486,7 @@ export default function WorkingPeoplePage() {
       <TestimonialsGrid />
 
       {/* CTA */}
-     <OtherCourses name="Tiếng Anh Cho Người Đi Làm" />
+      <OtherCourses name="Tiếng Anh Cho Người Đi Làm" />
 
       <style jsx>{`
         .animate-marquee {
@@ -638,7 +628,9 @@ export function StarterToFlyerRoadmap() {
 import { useRef, useEffect } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { CourseGallery } from "../tieng-anh-lop-6-9/69";
-import { OtherCourses } from "../tieng-anh-tre-em/page";
+import { OtherCourses } from "../tieng-anh-tre-em/children-english";
+import RegisterNow from "@/components/register";
+
 // import Image from "next/image";
 
 const books = [

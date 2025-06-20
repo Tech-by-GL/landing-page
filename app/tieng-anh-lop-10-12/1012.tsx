@@ -18,7 +18,8 @@ import {
 import Image from "next/image";
 import Link from "next/link";
 import { CourseGallery } from "../tieng-anh-lop-6-9/69";
-import { OtherCourses } from "../tieng-anh-tre-em/page";
+import { OtherCourses } from "../tieng-anh-tre-em/children-english";
+import RegisterNow from "@/components/register";
 
 export default function From10to12() {
   return (
@@ -143,10 +144,11 @@ export default function From10to12() {
               </div>
 
               <div className="flex flex-col sm:flex-row gap-4">
-                <Link href="#contact" className="btn-primary text-center">
-                  Đăng ký ngay
-                </Link>
-                <Link href="#curriculum" className="btn-accent text-center">
+                <RegisterNow title="Đăng ký tư vấn miễn phí" color="" />
+                <Link
+                  href="#curriculum"
+                  className="btn-accent text-sm font-bold px-6 py-3 rounded-xl transition"
+                >
                   Xem chương trình học
                 </Link>
               </div>
@@ -155,7 +157,9 @@ export default function From10to12() {
             <div className="order-1 lg:order-2 relative">
               <div className="relative w-full h-[450px] rounded-2xl overflow-hidden shadow-xl transform transition-transform duration-500 hover:scale-105">
                 <Image
-                  src={"https://chamchi.sgp1.cdn.digitaloceanspaces.com/website/3.png"}
+                  src={
+                    "https://chamchi.sgp1.cdn.digitaloceanspaces.com/website/3.png"
+                  }
                   alt={"Chương trình KET"}
                   fill
                   className="object-cover"
@@ -166,12 +170,12 @@ export default function From10to12() {
         </div>
       </section>
 
-      <section className="py-20 bg-white">
+      <section className="py-20 bg-white" id="curriculum">
         <div className="container-custom grid grid-cols-1 lg:grid-cols-3 gap-8">
           {/* Left Content */}
           <div className="lg:col-span-2 space-y-8">
             <div>
-              <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-2">
+              <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-2" id="curriculum">
                 Chương trình Tiếng Anh Cấp 3 - THPT
               </h2>
               <p className="text-gray-700 text-lg">
@@ -364,11 +368,6 @@ export default function From10to12() {
                   <h5 className="text-sm font-semibold text-gray-500 uppercase mb-2">
                     Tư vấn miễn phí
                   </h5>
-                  <p className="text-sm text-gray-600">
-                    Để được tư vấn miễn phí về chương trình, vui lòng để lại số
-                    điện thoại. Anh Ngữ Chăm Chỉ sẽ liên hệ với quý phụ huynh
-                    trong thời gian sớm nhất.
-                  </p>
 
                   {/*INput phone number   */}
                   <div>
@@ -427,7 +426,7 @@ export default function From10to12() {
               năng giao tiếp cần thiết để vượt qua kỳ thi một cách tự tin.
             </p>
 
-            <ul className="list-none space-y-2 text-gray-800 text-sm">
+            <ul className="list-none space-y-2 text-gray-800 text-sm mb-8">
               <li>
                 <strong>Kết quả:</strong> Điểm thi tốt nghiệp THPT môn tiếng Anh
                 9.0
@@ -444,14 +443,16 @@ export default function From10to12() {
               </li>
             </ul>
 
-            <div className="mt-6">
+            {/* <div className="mt-6">
               <Link
                 href="#register"
                 className="inline-block bg-primary text-white text-sm font-semibold px-6 py-3 rounded-xl hover:bg-primary/90 transition"
               >
                 Đăng ký ngay
               </Link>
-            </div>
+            </div> */}
+
+            <RegisterNow title="Đăng ký ngay cho bé" color="" />
           </div>
         </div>
 
@@ -462,7 +463,7 @@ export default function From10to12() {
               <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
                 Lấy lại gốc ngữ pháp tiếng Anh chỉ sau 6 tháng
               </h2>
-              <p className="text-base text-gray-700 mb-6">
+              <p className="text-base text-gray-700 mb-8">
                 Bạn <strong>Anh Thư (lớp 12)</strong>
                 đã vượt qua khó khăn trong việc học tiếng Anh bằng cách tham gia
                 khóa học ngữ pháp tại Chăm Chỉ.
@@ -477,14 +478,16 @@ export default function From10to12() {
               </li>
             </ul> */}
 
-              <div className="mt-6">
+              {/* <div className="mt-6">
                 <Link
                   href="#register"
                   className="inline-block bg-primary text-white text-sm font-semibold px-6 py-3 rounded-xl hover:bg-primary/90 transition"
                 >
                   Đăng ký ngay cho bé
                 </Link>
-              </div>
+              </div> */}
+
+              <RegisterNow title="Đăng ký ngay cho bé" color="" />
             </div>
 
             {/* Hình ảnh học viên */}

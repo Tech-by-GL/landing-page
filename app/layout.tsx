@@ -8,6 +8,7 @@ import { Footer } from "@/components/footer"
 import { OrganizationSchema, WebsiteSchema } from "@/components/seo/structured-data"
 import { MobileNavigation } from "@/components/mobile-navigation"
 import { ThemeProvider } from "@/components/theme-provider"
+import Head from "next/head";
 
 const nunito = Nunito({
   subsets: ["vietnamese", "latin"],
@@ -66,14 +67,14 @@ export const metadata: Metadata = {
     url: "https://chamchi.vn",
     title: "Chamchi - Trung tâm Anh ngữ STEAM & Trí Tuệ Nhân Tạo",
     description:
-      "Chamchi là trung tâm Anh ngữ hiện đại dạy tiếng Anh thông qua phương pháp STEAM kết hợp Trí Tuệ Nhân Tạo.",
+      "Chăm Chỉ là trung tâm Anh ngữ hiện đại dạy tiếng Anh thông qua phương pháp STEAM kết hợp Trí Tuệ Nhân Tạo.",
     siteName: "Chamchi",
     images: [
       {
         url: "https://chamchi.vn/og-image.png",
         width: 1200,
         height: 630,
-        alt: "Chamchi - Trung tâm Anh ngữ STEAM",
+        alt: "Anh Ngữ Chăm Chỉ - Trung tâm Anh ngữ STEAM & Trí Tuệ Nhân Tạo",
       },
     ],
     
@@ -117,6 +118,25 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="vi" className={nunito.variable}>
+      <Head>
+        <title>Anh Ngữ Chăm Chỉ</title>
+        <meta name="description" content={`
+          Anh Ngữ Chăm Chỉ là trung tâm Anh Ngữ ứng dụng trí tuệ nhân tạo (AI) vào dạy học để nâng cao chất lượng giảng dạy. Chúng tôi không chạy theo kinh doanh – chỉ tập trung vào học trò. Tại đây, học viên được chăm sóc kỹ lưỡng và học tiếng Anh theo cách hiệu quả nhất.
+          `} />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Organization",
+              name: "Anh Ngữ Chăm Chỉ",
+              url: "https://chamchi.vn",
+              logo: "https://chamchi.sgp1.cdn.digitaloceanspaces.com/website/ChamChiHatLogo.png",
+            }),
+          }}
+        />
+      </Head>
+
       <body className="min-h-screen bg-white flex flex-col">
         <ThemeProvider defaultTheme="light">
           <OrganizationSchema />
@@ -127,6 +147,8 @@ export default function RootLayout({
           <FloatingButtons />
           <MobileNavigation />
         </ThemeProvider>
+
+        
       </body>
     </html>
   )

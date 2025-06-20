@@ -342,7 +342,7 @@ export function HeroSection() {
                 transition={{ duration: 0.3 }}
               >
                 <Image
-                  src="https://chamchi.sgp1.cdn.digitaloceanspaces.com/website/hero-3.png"
+                  src="https://chamchi.sgp1.cdn.digitaloceanspaces.com/website/hero-mini.png"
                   alt="Học sinh Chamchi trong lớp học công nghệ STEAM hiện đại"
                   fill
                   className="object-cover"

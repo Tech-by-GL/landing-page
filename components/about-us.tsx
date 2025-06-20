@@ -1,36 +1,39 @@
-"use client"
+"use client";
 
-import { useEffect, useState } from "react"
-import Image from "next/image"
-import { motion } from "framer-motion"
+import { useEffect, useState } from "react";
+import Image from "next/image";
+import { motion } from "framer-motion";
 
 export function AboutUs() {
-  const [isVisible, setIsVisible] = useState(false)
+  const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
-          setIsVisible(true)
+          setIsVisible(true);
         }
       },
-      { threshold: 0.1 },
-    )
+      { threshold: 0.1 }
+    );
 
-    const section = document.getElementById("about")
+    const section = document.getElementById("about");
     if (section) {
-      observer.observe(section)
+      observer.observe(section);
     }
 
     return () => {
       if (section) {
-        observer.unobserve(section)
+        observer.unobserve(section);
       }
-    }
-  }, [])
+    };
+  }, []);
 
   return (
-    <section className="min-h-[60vh] md:min-h-[70vh] flex items-center py-8 md:py-12 lg:py-16 bg-white" id="about">
+    <section
+      className="min-h-[60vh] md:min-h-[70vh] flex items-center py-8 md:py-12 lg:py-16 bg-white"
+      id="about"
+    >
       <div className="container-custom">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -39,39 +42,52 @@ export function AboutUs() {
           className="text-center max-w-3xl mx-auto mb-8 md:mb-12"
         >
           <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-3 md:mb-4">
-            Về <span className="text-primary">Chamchi</span>
+            Về <span className="text-primary">Anh Ngữ Chăm Chỉ</span>
           </h2>
           <p className="text-sm md:text-base text-gray-700">
-            Chamchi là trung tâm Anh ngữ hiện đại với sứ mệnh mang đến phương pháp học tiếng Anh hiệu quả và thú vị cho
-            học sinh từ lớp 6 trở lên
+            <span className="font-semibold text-primary">Chăm Chỉ</span> là
+            trung tâm Anh ngữ hiện đại với sứ mệnh mang đến phương pháp học
+            tiếng Anh hiệu quả và thú vị, với những đổi tập trung vào phát triển
+            toàn diện cho học sinh.
           </p>
         </motion.div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-[1fr_2fr] gap-8 md:gap-12 items-center">
           <motion.div
             initial={{ opacity: 0, x: -50 }}
             animate={isVisible ? { opacity: 1, x: 0 } : { opacity: 0, x: -50 }}
             transition={{ duration: 0.7 }}
           >
-            <h3 className="text-lg md:text-xl font-bold text-gray-900 mb-3 md:mb-4">Sứ mệnh của chúng tôi</h3>
+            <h3 className="text-lg md:text-xl font-bold text-gray-900 mb-3 md:mb-4">
+              Sứ mệnh:{" "}
+              <span className="text-primary">Giáo dục là Tận Hiến </span>
+            </h3>
             <p className="text-sm md:text-base text-gray-700 mb-4 md:mb-6">
-              Chamchi ra đời với sứ mệnh mang đến một phương pháp học tiếng Anh hiệu quả, vui vẻ và phù hợp với học sinh
-              Việt Nam. Chúng tôi tin rằng việc học ngôn ngữ không chỉ là ghi nhớ từ vựng và ngữ pháp, mà còn là quá
-              trình phát triển tư duy và kỹ năng toàn diện.
+              Đối với Chăm Chỉ và đội ngũ giáo viên, giáo dục không chỉ là công
+              việc mà còn là một sứ mệnh cao cả. Chúng tôi tận tâm mang đến
+              những kiến thức và kỹ năng cần thiết cho học sinh, giúp các em tự
+              tin và thành công trong tương lai.
             </p>
 
-            <h3 className="text-lg md:text-xl font-bold text-gray-900 mb-3 md:mb-4">Phương pháp STEAM</h3>
+            <h3 className="text-lg md:text-xl font-bold text-gray-900 mb-3 md:mb-4">
+              Hành Động:{" "}
+              <span className="text-primary">Đồng hành cùng Phát Triển</span>
+            </h3>
             <p className="text-sm md:text-base text-gray-700 mb-4 md:mb-6">
-              Chamchi áp dụng phương pháp STEAM (Khoa học, Công nghệ, Kỹ thuật, Nghệ thuật và Toán học) vào việc dạy
-              tiếng Anh. Học viên không chỉ học ngôn ngữ mà còn được tham gia vào các dự án thực tế, phát triển tư duy
-              phản biện, khả năng sáng tạo và kỹ năng giải quyết vấn đề.
+              Chăm Chỉ đồng hành cùng học sinh và Phụ Huynh trong hành trình
+              phát triển, cả về các kỹ năng sống lẫn kỹ năng ngôn ngữ.
             </p>
 
-            <h3 className="text-lg md:text-xl font-bold text-gray-900 mb-3 md:mb-4">Đội ngũ giáo viên</h3>
+            <h3 className="text-lg md:text-xl font-bold text-gray-900 mb-3 md:mb-4">
+              Đổi mới:{" "}
+              <span className="text-primary">STEAM & Trí Tuệ Nhân Tạo</span>
+            </h3>
             <p className="text-sm md:text-base text-gray-700">
-              Đội ngũ giáo viên tại Chamchi là những người có trình độ chuyên môn cao, giàu kinh nghiệm và đam mê giảng
-              dạy. Tất cả giáo viên đều có chứng chỉ quốc tế như CELTA, TESOL và được đào tạo về phương pháp giảng dạy
-              STEAM.
+              Chăm Chỉ áp dụng phương pháp STEAM (Khoa học, Công nghệ, Kỹ thuật,
+              Nghệ thuật và Toán học) kết hợp với ứng dụng Trí Tuệ Nhân Tạo{" "}
+              <span className="text-primary font-bold">chamchi.ai</span> do Chăm
+              Chỉ tạo ra để mang đến trải nghiệm học tập hiện đại và hiệu quả
+              nhất cho học viên.
             </p>
           </motion.div>
 
@@ -79,38 +95,14 @@ export function AboutUs() {
             initial={{ opacity: 0, x: 50 }}
             animate={isVisible ? { opacity: 1, x: 0 } : { opacity: 0, x: 50 }}
             transition={{ duration: 0.7 }}
-            className="grid grid-cols-2 gap-3 md:gap-4"
+            className="flex justify-center items-center"
           >
-            <div className="relative h-48 md:h-64 rounded-lg overflow-hidden shadow-md">
+            <div className="relative w-full max-w-2xl aspect-[16/9] md:aspect-[3/2] lg:aspect-[4/3] rounded-2xl overflow-hidden shadow-xl bg-white">
               <Image
-                src="/placeholder.svg?height=300&width=300"
-                alt="Học sinh Chamchi trong lớp học"
+                src="https://chamchi.sgp1.cdn.digitaloceanspaces.com/website/ket-class-hat.png"
+                alt="Ảnh lớp học Chamchi"
                 fill
-                className="object-cover"
-              />
-            </div>
-            <div className="relative h-48 md:h-64 rounded-lg overflow-hidden shadow-md mt-6 md:mt-8">
-              <Image
-                src="/placeholder.svg?height=300&width=300"
-                alt="Giáo viên Chamchi hướng dẫn học sinh"
-                fill
-                className="object-cover"
-              />
-            </div>
-            <div className="relative h-48 md:h-64 rounded-lg overflow-hidden shadow-md">
-              <Image
-                src="/placeholder.svg?height=300&width=300"
-                alt="Học sinh Chamchi làm việc nhóm"
-                fill
-                className="object-cover"
-              />
-            </div>
-            <div className="relative h-48 md:h-64 rounded-lg overflow-hidden shadow-md mt-6 md:mt-8">
-              <Image
-                src="/placeholder.svg?height=300&width=300"
-                alt="Không gian học tập tại Chamchi"
-                fill
-                className="object-cover"
+                className="object-contain"
               />
             </div>
           </motion.div>
@@ -141,9 +133,12 @@ export function AboutUs() {
                   <polyline points="22 4 12 14.01 9 11.01"></polyline>
                 </svg>
               </div>
-              <h3 className="text-lg md:text-xl font-bold text-gray-900 mb-2">10+ năm kinh nghiệm</h3>
+              <h3 className="text-lg md:text-xl font-bold text-gray-900 mb-2">
+                10+ năm kinh nghiệm
+              </h3>
               <p className="text-sm md:text-base text-gray-700">
-                Chamchi đã có hơn 10 năm kinh nghiệm trong lĩnh vực giảng dạy tiếng Anh cho học sinh Việt Nam.
+                Chamchi đã có hơn 10 năm kinh nghiệm trong lĩnh vực giảng dạy
+                tiếng Anh cho học sinh Việt Nam.
               </p>
             </div>
 
@@ -167,9 +162,12 @@ export function AboutUs() {
                   <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
                 </svg>
               </div>
-              <h3 className="text-lg md:text-xl font-bold text-gray-900 mb-2">200+ học viên</h3>
+              <h3 className="text-lg md:text-xl font-bold text-gray-900 mb-2">
+                200+ học viên
+              </h3>
               <p className="text-sm md:text-base text-gray-700">
-                200+ học viên đã tin tưởng và lựa chọn Chamchi để cải thiện kỹ năng tiếng Anh của mình.
+                200+ học viên đã tin tưởng và lựa chọn Chamchi để cải thiện kỹ
+                năng tiếng Anh của mình.
               </p>
             </div>
 
@@ -193,14 +191,17 @@ export function AboutUs() {
                   <circle cx="7" cy="7" r="3"></circle>
                 </svg>
               </div>
-              <h3 className="text-lg md:text-xl font-bold text-gray-900 mb-2">98% tỷ lệ đỗ</h3>
+              <h3 className="text-lg md:text-xl font-bold text-gray-900 mb-2">
+                98% tỷ lệ đỗ
+              </h3>
               <p className="text-sm md:text-base text-gray-700">
-                98% học viên của Chamchi đã đạt được chứng chỉ quốc tế như KET, PET và IELTS với kết quả cao.
+                98% học viên của Chamchi đã đạt được chứng chỉ quốc tế như KET,
+                PET và IELTS với kết quả cao.
               </p>
             </div>
           </div>
         </motion.div>
       </div>
     </section>
-  )
+  );
 }

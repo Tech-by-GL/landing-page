@@ -45,14 +45,14 @@ export const metadata: Metadata = {
 export default function Home() {
   const faqQuestions = [
     {
-      question: "Chamchi dạy những khóa học nào?",
+      question: "Chăm Chỉ dạy những khóa học nào?",
       answer:
-        "Chamchi cung cấp các khóa học luyện thi KET, PET, IELTS và tiếng Anh STEAM cho học sinh từ lớp 6 trở lên.",
+        "Chăm cung cấp các khóa học luyện thi KET, PET, IELTS và tiếng Anh STEAM cho học sinh từ lớp 6 trở lên.",
     },
     {
       question: "Phương pháp giảng dạy của Chamchi có gì đặc biệt?",
       answer:
-        "Chamchi áp dụng phương pháp STEAM (Khoa học, Công nghệ, Kỹ thuật, Nghệ thuật và Toán học) vào việc dạy tiếng Anh, giúp học viên không chỉ học ngôn ngữ mà còn phát triển tư duy phản biện và kỹ năng giải quyết vấn đề.",
+        "Chăm áp dụng phương pháp STEAM (Khoa học, Công nghệ, Kỹ thuật, Nghệ thuật và Toán học) vào việc dạy tiếng Anh, giúp học viên không chỉ học ngôn ngữ mà còn phát triển tư duy phản biện và kỹ năng giải quyết vấn đề.",
     },
     {
       question: "Tỷ lệ đỗ chứng chỉ của học viên Chamchi là bao nhiêu?",

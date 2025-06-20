@@ -4,6 +4,7 @@ import { motion, useInView } from "framer-motion";
 import Link from "next/link";
 import Image from "next/image";
 import { Phone } from "lucide-react";
+import RegisterNow from "./register";
 
 export const Address = () => {
   return (
@@ -59,7 +60,7 @@ export const Address = () => {
           </div>
 
           {/* Lợi ích khi đăng ký */}
-          <ul className="space-y-3">
+          <ul className="space-y-3 mb-6">
             {[
               "✔️ Kiểm tra đầu vào hoàn toàn miễn phí",
               "✔️ Tư vấn 1-1 lộ trình học phù hợp",
@@ -73,14 +74,16 @@ export const Address = () => {
           </ul>
 
           {/* CTA */}
-          <div className="mt-6">
+          {/* <div className="mt-6">
             <Link
               href="#register"
               className="inline-block bg-primary text-white font-bold py-3 px-6 rounded-xl shadow-md hover:bg-primary/90 transition-all duration-300"
             >
               Đăng ký tư vấn miễn phí
             </Link>
-          </div>
+          </div> */}
+
+          <RegisterNow title="Đăng ký tư vấn miễn phí" color="" />
         </div>
       </div>
     </section>

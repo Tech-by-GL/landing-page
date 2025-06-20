@@ -5,6 +5,7 @@ import Link from "next/link";
 import Image, { type ImageProps } from "next/image";
 import { motion, useAnimation, useInView } from "framer-motion";
 import { OptimizedImage } from "@/components/optimized-image";
+import RegisterNow from "./register";
 
 export const courses = [
   {
@@ -14,7 +15,7 @@ export const courses = [
     description:
       "Khóa học tiếng Anh dành cho trẻ em từ 6-10 tuổi, giúp các em làm quen với tiếng Anh thông qua các hoạt động vui nhộn và sáng tạo.",
     // image: "/KET-11.jpg",
-    image: "https://chamchi.sgp1.cdn.digitaloceanspaces.com/website/1.png",
+    image: "https://chamchi.sgp1.cdn.digitaloceanspaces.com/website/1-mini.png",
     features: [
       "Học từ vựng cơ bản qua trò chơi và hoạt động",
       "Phát triển toàn diện các kỹ năng nghe, nói, đọc, viết",
@@ -31,7 +32,7 @@ export const courses = [
     description:
       "Khóa học chuẩn bị cho kỳ thi Cambridge Key English Test (KET), chứng chỉ tiếng Anh cơ bản đầu tiên.",
     // image: "/KET-2.jpg",
-    image: "https://chamchi.sgp1.cdn.digitaloceanspaces.com/website/2.png",
+    image: "https://chamchi.sgp1.cdn.digitaloceanspaces.com/website/2-mini.png",
     features: [
       "2.000+ từ vựng thông dụng trải dài 16 môn học",
       "Diễn đạt ý tưởng cá nhân & tự tin giao tiếp",
@@ -47,7 +48,7 @@ export const courses = [
     description:
       "Khóa học chuẩn bị cho kỳ thi IELTS, giúp học viên đạt được điểm số mục tiêu từ 5.5 đến 7.5.",
     // image: "/lop10-3.jpg",
-    image: "https://chamchi.sgp1.cdn.digitaloceanspaces.com/website/3.png",
+    image: "https://chamchi.sgp1.cdn.digitaloceanspaces.com/website/3-mini.png",
     features: [
       "Học thuật và giao tiếp tiếng Anh nâng cao",
       "Phát triển kỹ năng viết luận và thuyết trình",
@@ -63,7 +64,7 @@ export const courses = [
     description:
       "Khóa học chuẩn bị cho kỳ thi Cambridge Preliminary English Test (PET), chứng chỉ tiếng Anh trình độ trung cấp.",
     // image: "/ielts2.png",
-    image: "https://chamchi.sgp1.cdn.digitaloceanspaces.com/website/4.png",
+    image: "https://chamchi.sgp1.cdn.digitaloceanspaces.com/website/4-mini.png",
     features: [
       "1.200+ từ vựng nâng cao trải dài 12 môn học",
       "Tiếp cận STEAM với độ phức tạp cao",
@@ -79,7 +80,7 @@ export const courses = [
     description:
       "Khóa học ngữ pháp tiếng Anh cơ bản, giúp học viên nắm vững cấu trúc ngữ pháp và sử dụng chính xác trong giao tiếp & các bài thi ở trường học.",
     // image: "/ielts5.jpg",
-    image: "https://chamchi.sgp1.cdn.digitaloceanspaces.com/website/6.png",
+    image: "https://chamchi.sgp1.cdn.digitaloceanspaces.com/website/6-mini.png",
     features: [
       "Nắm vững các cấu trúc ngữ pháp cơ bản",
       "Cải thiện khả năng viết và nói tiếng Anh",
@@ -95,7 +96,7 @@ export const courses = [
     description:
       "Khoá học AI ngắn hạn, nơi Chăm Chỉ giúp các học sinh thực hành & ứng dụng AI, qua đó là các bạn sẽ có thể sử dụng AI để giải quyết các vấn đề thực tế trong cuộc sống và công việc. Đồng thời, các bạn sẽ được cấp chứng chỉ Google AI sau khi hoàn thành khoá học.",
     // image: "/ielts3.png",
-    image: "https://chamchi.sgp1.cdn.digitaloceanspaces.com/website/5.png",
+    image: "https://chamchi.sgp1.cdn.digitaloceanspaces.com/website/7-mini.png",
     features: [
       "Nắm vững các cấu trúc ngữ pháp cơ bản",
       "Cải thiện khả năng viết và nói tiếng Anh",
@@ -144,8 +145,8 @@ export function Courses() {
 
   return (
     <section
-    // bg-gradient-to-br from-[#f0f8ff] to-[#ffffff]
-    
+      // bg-gradient-to-br from-[#f0f8ff] to-[#ffffff]
+
       className="min-h-[60vh] md:min-h-[70vh] flex items-center py-8 md:py-12 lg:py-16 bg-gradient-to-br from-[#f0f8ff] to-[#ffffff]"
       id="courses"
       ref={ref}
@@ -169,7 +170,7 @@ export function Courses() {
         <motion.div
           variants={container}
           initial="hidden"
-          animate={controls}
+          animate={isInView ? "visible" : "hidden"} // chứ không dùng controls
           // className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-4 md:gap-6 max-w-4xl mx-auto "
           className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 max-w-6xl mx-auto"
         >
@@ -177,12 +178,11 @@ export function Courses() {
             <motion.div
               key={course.id}
               variants={item}
-              className="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-all duration-300 hover:-translate-y-2 active:scale-95 touch-manipulation"
-              // style={{
-              //   backgroundImage: `url(${course.image})`,
-              //   backgroundSize: "cover",
-              //   backgroundPosition: "center",
-              // }}
+              className=" bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-all duration-300 hover:-translate-y-2 active:scale-95 touch-manipulation hover:cursor-pointer"
+              onClick={() => {
+                // window.location.href = `/courses/${course.slug}`;
+                window.location.href = getLinkHref(course.slug);
+              }}
             >
               <OptimizedImage
                 src={course.image}
@@ -229,21 +229,6 @@ export function Courses() {
                 )}
                 <div className="flex items-center mb-2">
                   ⏱️
-                  {/* <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="14"
-                      height="14"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      strokeWidth="2"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      className="text-primary mr-2"
-                    >
-                      <circle cx="12" cy="12" r="10"></circle>
-                      <polyline points="12 6 12 12 16 14"></polyline>
-                    </svg> */}
                   <span className="text-xs md:text-sm text-gray-600 ml-2">
                     <strong> Thời gian</strong>: {course.duration}
                   </span>
@@ -256,7 +241,11 @@ export function Courses() {
                   </span>
                 </div>
 
-                <div className="flex justify-between items-center mt-4 gap-5">
+                <div className="flex justify-between items-center mt-4 gap-5"
+                  onClick={(e) => {
+                    e.stopPropagation(); // Ngăn chặn sự kiện click lan truyền lên motion.div
+                  }}
+                >
                   <Link
                     // href={`/courses/${course.slug}`}
                     href={getLinkHref(course.slug)}
@@ -264,12 +253,8 @@ export function Courses() {
                   >
                     Tìm hiểu thêm
                   </Link>
-                  <Link
-                    href={`//${course.slug}`}
-                    className="w-1/2 btn-accent block text-center py-2 px-4 transition-colors text-sm md:text-base rounded-xl"
-                  >
-                    Đăng ký ngay
-                  </Link>
+
+                  <RegisterNow title="Đăng ký ngay" color="yellow" />
                 </div>
               </div>
             </motion.div>

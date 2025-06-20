@@ -8,7 +8,6 @@ const AboutUsPage = () => {
   return (
     <>
       <AboutUs />
-
       <CoreValues />
     </>
   );

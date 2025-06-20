@@ -1,8 +1,10 @@
 "use client";
 
+import { courses } from "@/components/courses";
 // app/ket/page.tsx
 import { EducationalPhilosophy } from "@/components/educational-philosophy";
 import { LearningRoadmap } from "@/components/learning-roadmap";
+import RegisterNow from "@/components/register";
 import TestimonialsGrid from "@/components/testimonial-grid";
 import { Testimonials } from "@/components/testimonials";
 import {
@@ -17,7 +19,7 @@ import {
 import Image from "next/image";
 import Link from "next/link";
 
-export default function GoogleAICert() {
+export default function TiengAnhTreEm() {
   return (
     <div className="bg-gray-50">
       {/* Hero Section */}
@@ -86,38 +88,37 @@ export default function GoogleAICert() {
                     />
                   </svg>
                   <span className="ml-1 text-gray-500 md:ml-2">
-                    Khoá học AI với chứng chỉ Google AI Expert
+                    Tiếng Anh Trẻ Em Lớp 1-5
                   </span>
                 </div>
               </li>
             </ol>
           </nav>
 
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-[1.05fr_1fr] gap-8 md:gap-12 items-center">
             <div className="order-2 lg:order-1">
               <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
-                Khoá học AI với Google
+                Tiếng Anh Trẻ Em Lớp 1-5
               </h1>
               <p className="text-lg text-gray-700 mb-8">
-                Khóa học AI dành cho học sinh từ lớp 5, giúp học viên nắm vững
-                kiến thức và kỹ năng cần thiết để trở thành chuyên gia AI. Được
-                thiết kế bởi các chuyên gia hàng đầu, khóa học cung cấp lộ trình
-                học tập rõ ràng, từ cơ bản đến nâng cao, với chứng chỉ Google AI
-                Essentials công nhận năng lực.
+                Chương trình thiết kế theo khung Cambridge quốc tế (Starters –
+                Movers – Flyers), dành cho học sinh từ Lớp 1 đến Lớp 5. Mục tiêu
+                là giúp học sinh xây nền tiếng Anh sớm, tự tin thi chứng chỉ và
+                hội nhập chương trình tăng cường – tích hợp ở các cấp học sau.
               </p>
 
               <div className="grid grid-cols-2 gap-4 mb-8">
                 <div className="flex items-center">
                   <Clock className="h-5 w-5 text-primary mr-2" />
-                  <span className="text-gray-700">Thời gian: 1 tháng</span>
+                  <span className="text-gray-700">Thời gian: 12 tháng</span>
                 </div>
                 <div className="flex items-center">
                   <Calendar className="h-5 w-5 text-primary mr-2" />
-                  <span className="text-gray-700">Khai giảng: 01/07/2025</span>
+                  <span className="text-gray-700">Khai giảng: Mỗi tháng</span>
                 </div>
                 <div className="flex items-center">
                   <Users className="h-5 w-5 text-primary mr-2" />
-                  <span className="text-gray-700">Sĩ số lớp: 10 - 15 bạn</span>
+                  <span className="text-gray-700">Sĩ số lớp: 8 - 12 bạn</span>
                 </div>
                 <div className="flex items-center">
                   <svg
@@ -135,7 +136,7 @@ export default function GoogleAICert() {
                     <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
                   </svg>
                   <span className="text-gray-700">
-                    Chuẩn đầu ra: Chứng chỉ Google AI
+                    Cấp độ: A1-B1 Chuẩn Cambridge
                   </span>
                 </div>
               </div>
@@ -177,80 +178,125 @@ export default function GoogleAICert() {
             </div>
 
             <div className="order-1 lg:order-2 relative">
-              <div className="relative w-full h-[450px] rounded-2xl overflow-hidden shadow-xl transform transition-transform duration-500 hover:scale-105">
+              <div className="relative h-[300px] md:h-[450px] w-full rounded-2xl overflow-hidden shadow-xl">
                 <Image
                   src={
-                    "https://chamchi.sgp1.cdn.digitaloceanspaces.com/website/student-with-ai.png"
-                  }
+                    "https://chamchi.sgp1.cdn.digitaloceanspaces.com/website/1.png"
+                  } // 👉 Thay bằng ảnh thật
                   alt={"Chương trình KET"}
                   fill
                   className="object-cover"
                 />
               </div>
+
+              {/* <div className="absolute -bottom-6 -right-6 bg-white p-4 rounded-lg shadow-lg">
+                <div className="flex items-center gap-2">
+                  <div className="bg-accent/20 p-2 rounded-full">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      className="text-primary"
+                    >
+                      <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                      <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                    </svg>
+                  </div>
+                  <div>
+                    <p className="font-bold text-gray-900">{100}%</p>
+                    <p className="text-sm text-gray-600">Tỷ lệ thành công</p>
+                  </div>
+                </div>
+              </div> */}
             </div>
           </div>
         </div>
       </section>
 
-      <section className="py-20 bg-white">
+      <section className="py-20 bg-white" id="curriculum">
         <div className="container-custom grid grid-cols-1 lg:grid-cols-3 gap-8">
           {/* Left Content */}
           <div className="lg:col-span-2 space-y-8">
             <div>
-              <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-2">
-                Khoá học Trí Tuệ Nhân Tạo với Google AI Essentials
+              <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-2" >
+                Chương trình Tiếng Anh trẻ em toàn diện
               </h2>
               <p className="text-gray-700 text-lg">
-                Với sự hỗ trợ từ học viện đào tạo Trí Tuệ Nhân Tạo dành cho các
-                doanh nghiệp lớn Langcraft Education, khóa học này được thiết kế
-                để giúp học viên nắm vững kiến thức và kỹ năng cần thiết để sử
-                dụng AI hiệu quả trong học tập và công việc. Học viên sẽ được
-                học từ cơ bản đến nâng cao, bao gồm các chủ đề như:
-                <ul className="list-disc ml-6 mt-2 space-y-2">
-                  <li>
-                    <strong>Giới thiệu về AI:</strong> Hiểu rõ AI là gì, các ứng
-                    dụng và xu hướng hiện tại.
-                  </li>
-                  <li>
-                    <strong>Sử dụng ChatGPT hiệu quả:</strong> Cách đặt câu hỏi,
-                    tối ưu hóa kết quả và ứng dụng trong học tập.
-                  </li>
-                  <li>
-                    <strong>Sử dụng các công cụ AI để học tiếng Anh:</strong>{" "}
-                    với các công cụ như Grammarly, Google Translate, và các ứng
-                    dụng học tiếng Anh khác.
-                  </li>
-                  <li>
-                    <strong>Chứng chỉ Google AI Essentials:</strong> Đạt được
-                    chứng chỉ công nhận năng lực AI từ Google, với sự hướng dẫn
-                    trực tiếp từ đội ngũ giáo viên.
-                  </li>
-                </ul>
+                Chương trình thiết kế theo khung Cambridge quốc tế (Starters –
+                Movers – Flyers), dành cho học sinh từ{" "}
+                <strong>Lớp 1 đến Lớp 5</strong>. Mục tiêu là giúp học sinh{" "}
+                <strong>xây nền tiếng Anh sớm</strong>,{" "}
+                <strong>tự tin thi chứng chỉ</strong> và{" "}
+                <strong>hội nhập chương trình tăng cường – tích hợp</strong> ở
+                các cấp học sau.
               </p>
             </div>
 
-            {/* <StarterToFlyerRoadmap /> */}
+            <StarterToFlyerRoadmap />
 
             <div>
               <h3 className="text-2xl  font-bold text-gray-900 mb-5 mt-16">
-                Kế hoạch học tập tại
-                <span className="text-primary font-bold ml-1">Chăm Chỉ</span>
+                Vì sao nên thi Starters – Movers – Flyers?
               </h3>
               {/* <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-5">
                 Vì sao nên thi Starters – Movers – Flyers?
               </h2> */}
               <ul className="list-none text-gray-700 text-base space-y-3 ml-2">
                 <li>
-                  <strong>Ngày 1:</strong> Học sử dụng ChatGPT cơ bản – cách đặt
-                  câu hỏi và nhận câu trả lời.
+                  ✔️{" "}
+                  <span>
+                    <strong>CHUẨN QUỐC TẾ:</strong> Chương trình hướng tới bằng
+                    cấp quốc tế như <strong>STARTERS, MOVERS, FLYERS</strong>.
+                  </span>
                 </li>
                 <li>
-                  <strong>Ngày 2:</strong> Học và thực hành các công cụ hỗ trợ,
-                  chuẩn bị có kỳ thi chứng chỉ Google AI Essentials.
+                  ✔️ <strong>ƯU TIÊN XÉT TUYỂN:</strong> Các trường THCS sử dụng
+                  chứng chỉ này để tuyển sinh các lớp chọn & tăng cường.
                 </li>
                 <li>
-                  <strong>Ngày 3:</strong> Học sinh thi chứng chỉ Google AI
-                  Essentials, nhận chứng chỉ và đánh giá kết quả.
+                  ✔️{" "}
+                  <span>
+                    <strong>NỀN TẢNG TIẾNG ANH:</strong> Giúp học sinh xây dựng
+                    nền tảng ngôn ngữ toàn diện, chuẩn quốc tế từ sớm.
+                  </span>
+                </li>
+                {/* <li>
+                  ✔️ <strong>LÀM QUEN VỚI KỲ THI QUỐC TẾ:</strong> Giúp học sinh
+                  phát triển sự tự tin, chủ động thi các chứng chỉ cao hơn (KET,
+                  PET, IELTS).
+                </li> */}
+                {/* <li>
+                  ✔️ <strong>ĐƯỢC KHUYẾN KHÍCH TỪ GD&ĐT:</strong> Nhiều địa
+                  phương đưa vào như một phần chuẩn đầu ra cấp tiểu học.
+                </li> */}
+              </ul>
+            </div>
+
+            <div>
+              <h3 className="text-2xl font-bold text-gray-900 mb-5 mt-14">
+                Thế mạnh của{" "}
+                <span className="text-primary font-bold ml-1">Chăm Chỉ</span>
+              </h3>
+              <ul className="list-disc text-gray-700 text-base space-y-3 ml-6">
+                <li>
+                  <strong className="capitalize ">
+                    ĐỘI NGŨ GIÁO VIÊN TẬN TÂM:
+                  </strong>{" "}
+                  Đội ngũ chuyên sâu và tận tâm, giàu kinh nghiệm.
+                </li>
+                <li>
+                  <strong>THEO DÕI VÀ BÁO CÁO:</strong> Đánh giá định kỳ – báo
+                  cáo chi tiết – điều chỉnh lộ trình riêng cho từng em.
+                </li>
+                <li>
+                  <strong>CHI PHÍ HỢP LÝ:</strong> Mức học phí phù hợp, cam kết
+                  chất lượng và dịch vụ vượt mong đợi.
                 </li>
               </ul>
             </div>
@@ -258,24 +304,30 @@ export default function GoogleAICert() {
             <div className="space-y-4 mt-10">
               {[
                 {
-                  title: "📘 Vì sao phải học cách dùng AI?",
+                  title: "📘 Chứng chỉ Cambridge có giá trị thế nào?",
                   content:
-                    " AI đang trở thành công cụ không thể thiếu trong học tập và công việc. Việc biết cách sử dụng AI sẽ giúp học sinh nâng cao hiệu quả học tập, tiết kiệm thời gian và mở rộng khả năng sáng tạo. Học sinh sẽ được hướng dẫn cách sử dụng AI một cách an toàn và hiệu quả.",
+                    "Chứng chỉ Starters – Movers – Flyers do Cambridge cấp có giá trị toàn cầu, không hết hạn. Đây là bước đệm giúp học sinh sẵn sàng cho KET, PET, và các kỳ thi quốc tế sau này. Nhiều trường tại Việt Nam cũng sử dụng để xét tuyển đầu vào lớp tăng cường hoặc lớp tích hợp.",
                 },
                 {
-                  title: "📊 Con tôi lớp 4 thì có đi học được không?",
+                  title: "📊 Có đánh giá tiến độ trong quá trình học không?",
                   content:
-                    "Các học sinh từ lớp 5 sẽ được coi là phù hợp với chương trình. Tuy nhiên, nếu như học sinh có khả năng sử dụng máy tính thông thạo, thì hoàn toàn có thể tham gia chương trình! Phụ huynh vui lòng liên hệ với trung tâm qua số điện thoại để được tư vấn cụ thể.",
+                    "Có. Chúng tôi đánh giá định kỳ hàng tháng qua bài kiểm tra kỹ năng, báo cáo chi tiết về từ vựng – ngữ pháp – kỹ năng nghe nói đọc viết và gửi tới phụ huynh. Giáo viên sẽ tư vấn điều chỉnh lộ trình nếu cần thiết.",
                 },
                 {
-                  title: "📚 Tôi có thể tham gia cùng con không?",
+                  title: "📚 Giáo trình sử dụng là gì?",
                   content:
-                    "Chương trình được thiết kế dành riêng cho học sinh, tuy nhiên phụ huynh có thể tham gia cùng con trong các buổi học để hỗ trợ và theo dõi quá trình học tập. Chúng tôi khuyến khích sự đồng hành của phụ huynh để tạo động lực cho học sinh.",
+                    "Chúng tôi sử dụng giáo trình Cambridge chuẩn quốc tế, kết hợp cùng tài liệu luyện đề thực tế và học liệu tương tác (flashcard, video, quiz...) để học sinh vừa học – vừa luyện – vừa kiểm tra.",
                 },
                 {
-                  title: "💰 Học phí đã bao gồm tính chỉ chưa?",
+                  title:
+                    "👨‍👩‍👧‍👦 Phụ huynh có được theo dõi quá trình học của con không?",
                   content:
-                    "Học phí cho khóa học AI với Google AI Essentials là 500.000đ, đã bao gồm toàn bộ chi phí học tập, các dụng cụ cần thiết như máy tính, và thi chứng chỉ Google AI Essentials. Học sinh sẽ nhận được chứng chỉ sau khi hoàn thành khóa học.",
+                    "Phụ huynh được cập nhật qua sổ liên lạc điện tử, tin nhắn định kỳ và có thể gặp giáo viên tại các buổi họp phụ huynh hằng quý. Mọi tiến độ đều minh bạch và có phản hồi rõ ràng.",
+                },
+                {
+                  title: "💰 Học phí phù hợp như thế nào?",
+                  content:
+                    "Chăm Chỉ thiết kế lộ trình tối ưu về chi phí – đảm bảo hiệu quả mà vẫn phù hợp với đa số gia đình. Có nhiều mức học phí theo hình thức học: lớp thường, lớp tăng tốc, học online hoặc trực tiếp.",
                 },
               ].map((item, index) => (
                 <details
@@ -316,11 +368,12 @@ export default function GoogleAICert() {
                 {/* Title */}
                 <div>
                   <h4 className="text-2xl font-bold text-gray-900 mb-1">
-                    Khoá học AI với Google
+                    Tiếng Anh Trẻ Em Toàn Diện
                   </h4>
                   <p className="text-sm text-gray-600">
-                    Chứng chỉ Google AI Essentials – Nền tảng vững chắc cho các
-                    bạn học sinh trong thời đại của Trí Tuệ Nhân Tạo.
+                    Chương trình thiết kế theo khung Cambridge, với môi trường
+                    học tập giúp các em phát triển toàn diện, hướng tới các tính
+                    chỉ quốc tế Starters – Movers – Flyers.
                   </p>
                 </div>
 
@@ -331,17 +384,16 @@ export default function GoogleAICert() {
                   </h5>
                   <ul className="text-sm text-gray-800 space-y-1">
                     <li>
-                      <strong>Độ tuổi:</strong> Từ lớp 5 trở lên
+                      <strong>Độ tuổi:</strong> 6–10 tuổi
                     </li>
                     <li>
-                      <strong>Trình độ:</strong> Không yêu cầu
+                      <strong>Trình độ:</strong> A1 Starters đến A2 Flyers
                     </li>
                     <li>
-                      <strong>Sĩ số lớp:</strong> Tối đa 15 học viên
+                      <strong>Sĩ số lớp:</strong> Tối đa 12 học viên
                     </li>
                     <li>
-                      <strong>Học phí:</strong> 500.000đ / Khoá (đã bao gồm tính
-                      chỉ)
+                      <strong>Học phí:</strong> Từ 1.000.000đ / tháng
                     </li>
                   </ul>
                 </div>
@@ -353,13 +405,28 @@ export default function GoogleAICert() {
                   </h5>
 
                   {/*INput phone number   */}
-                  <CallbackForm />
-                  {/* <Link
-                    href=""
+                  <div>
+                    {/* <label
+                      htmlFor="phone"
+                      className="block text-sm font-medium text-gray-700 mb-1 mt-2"
+                    >
+                      Số điện thoại của bạn
+                    </label> */}
+                    <input
+                      type="tel"
+                      id="phone"
+                      name="phone"
+                      placeholder="Nhập số điện thoại"
+                      className="mt-2 w-full px-4 py-2 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent text-sm"
+                    />
+                  </div>
+
+                  <Link
+                    href="#register"
                     className=" mt-2 w-full block text-center px-6 py-2 bg-primary text-white text-sm font-semibold rounded-xl hover:bg-primary/90 transition"
                   >
                     Nhận tư vấn miễn phí
-                  </Link> */}
+                  </Link>
                 </div>
               </div>
             </div>
@@ -372,7 +439,7 @@ export default function GoogleAICert() {
           {/* Hình ảnh học viên */}
           <div className="relative w-full h-[450px] rounded-2xl overflow-hidden shadow-xl transform transition-transform duration-500 hover:scale-105">
             <Image
-              src="https://chamchi.sgp1.cdn.digitaloceanspaces.com/website/ket-ai-classroom.png" // 👉 Thay bằng ảnh thật
+              src="https://chamchi.sgp1.cdn.digitaloceanspaces.com/website/starter.png" // 👉 Thay bằng ảnh thật
               alt="Học viên đạt Flyers tại Chăm Chỉ"
               layout="fill"
               objectFit="cover"
@@ -384,25 +451,28 @@ export default function GoogleAICert() {
           {/* Nội dung câu chuyện */}
           <div>
             <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
-              Câu chuyện của AI và học tiếng Anh
+              Hành trình đến chứng chỉ Mover 15/15
             </h2>
             <p className="text-base text-gray-700 mb-6">
-              Tại Chăm Chỉ, chúng tôi không chỉ dạy tiếng Anh mà còn giúp học
-              viên hiểu và sử dụng AI một cách hiệu quả. Khóa học AI với Google
-              AI Essentials sẽ trang bị cho học viên những kỹ năng cần thiết để
-              sử dụng AI trong học tập và cuộc sống hàng ngày. Học viên sẽ được
-              hướng dẫn cách sử dụng các công cụ AI phổ biến như ChatGPT, Google
-              Translate, và nhiều ứng dụng khác để nâng cao khả năng tiếng Anh
-              của mình.
+              Bé <strong>Minh Châu (10 tuổi)</strong> bắt đầu học tiếng Anh tại
+              Chăm Chỉ khi chưa từng tham gia lớp tiếng Anh nào. Sau 12 tháng
+              học theo chương trình Cambridge – dưới sự hướng dẫn tận tâm của
+              giáo viên và lộ trình cá nhân hóa, em đã đạt chứng chỉ{" "}
+              <strong>Cambridge MOVERS</strong> với kết quả xuất sắc, và hiện
+              đang là học sinh lớp tăng cường tiếng Anh tại một trường công lập
+              trọng điểm ở TP.HCM.
             </p>
 
-            <ul className="list-none space-y-2 text-gray-800 text-sm mb-8">
+            <ul className="list-none space-y-2 text-gray-800 text-sm mb-10">
               <li>
-                <strong>Kết quả:</strong> Đầu ra chuẩn quốc tế: Chứng chỉ Google
-                AI Essentials
+                <strong>Kết quả:</strong> Đạt 15/15 khiên MOVER
               </li>
               <li>
-                <strong>Thời gian học:</strong> 1 tháng
+                <strong>Thời gian học:</strong> 12 tháng (2 buổi/tuần)
+              </li>
+              <li>
+                <strong>Phụ huynh đánh giá:</strong> "Lộ trình rõ ràng, giáo
+                viên hỗ trợ sát sao, con tự tin hơn từng ngày!"
               </li>
             </ul>
 
@@ -414,20 +484,21 @@ export default function GoogleAICert() {
                 Đăng ký ngay cho bé
               </Link>
             </div> */}
-            <RegisterNow title="Đăng ký ngay" color="" />
+
+            <RegisterNow title="Đăng ký ngay cho bé" color="yellow" />
           </div>
         </div>
       </section>
 
-      <CourseGallery />
-
       {/* <LearningRoadmap /> */}
       {/* <EducationalPhilosophy /> */}
       {/* Material & Book's marquee */}
+
       <TestimonialsGrid />
 
       {/* CTA */}
-      <OtherCourses name="Chứng Chỉ Google AI" />
+
+      <OtherCourses name="Tiếng Anh Trẻ Em Lớp 1-5" />
 
       <style jsx>{`
         .animate-marquee {
@@ -452,7 +523,7 @@ const starterToFlyerRoadmap = [
     name: "Starters",
     level: "Pre-A1",
     step: 1,
-    duration: "4–6 tháng",
+    duration: "12 tháng",
     icon: "🔤",
     color: "from-pink-500 to-pink-600",
     bgColor: "bg-pink-50",
@@ -467,7 +538,7 @@ const starterToFlyerRoadmap = [
     name: "Movers",
     level: "A1",
     step: 2,
-    duration: "5–7 tháng",
+    duration: "12+ tháng",
     icon: "📘",
     color: "from-yellow-500 to-yellow-600",
     bgColor: "bg-yellow-50",
@@ -482,7 +553,7 @@ const starterToFlyerRoadmap = [
     name: "Flyers",
     level: "A2",
     step: 3,
-    duration: "6–8 tháng",
+    duration: "12+ tháng",
     icon: "🚀",
     color: "from-green-500 to-emerald-600",
     bgColor: "bg-green-50",
@@ -564,156 +635,44 @@ export function StarterToFlyerRoadmap() {
   );
 }
 
-// "use client";
-
-import { useRef, useEffect } from "react";
-import { ChevronLeft, ChevronRight } from "lucide-react";
-import { CourseGallery } from "../tieng-anh-lop-6-9/69";
-import { sendTelegramMessage } from "@/components/telegram";
-import CallbackForm from "@/components/call-back-form";
-import RegisterNow from "@/components/register";
-import { OtherCourses } from "../tieng-anh-tre-em/children-english";
-// import Image from "next/image";
-
-const books = [
-  {
-    title: "Grammar Friends A2",
-    image: "/books/grammar-friends.jpg",
-    note: "Ngữ pháp nền tảng cho cấp 2",
-  },
-  {
-    title: "Vocabulary in Use A2",
-    image: "/books/vocab-in-use.jpg",
-    note: "Từ vựng theo chủ đề – chuẩn KET/PET",
-  },
-  {
-    title: "Cambridge KET Trainer",
-    image: "/books/ket-trainer.jpg",
-    note: "Luyện đề thi chứng chỉ KET",
-  },
-  {
-    title: "PET Practice Tests",
-    image: "/books/pet-practice.jpg",
-    note: "Luyện đề thực tế – chuẩn PET",
-  },
-  {
-    title: "STEM English Projects",
-    image: "/books/stem-projects.jpg",
-    note: "Kết hợp tiếng Anh và tư duy STEM",
-  },
-  {
-    title: "STEM English Projects",
-    image: "/books/stem-projects.jpg",
-    note: "Kết hợp tiếng Anh và tư duy STEM",
-  },
-  {
-    title: "STEM English Projects",
-    image: "/books/stem-projects.jpg",
-    note: "Kết hợp tiếng Anh và tư duy STEM",
-  },
-  {
-    title: "STEM English Projects",
-    image: "/books/stem-projects.jpg",
-    note: "Kết hợp tiếng Anh và tư duy STEM",
-  },
-  {
-    title: "STEM English Projects",
-    image: "/books/stem-projects.jpg",
-    note: "Kết hợp tiếng Anh và tư duy STEM",
-  },
-  {
-    title: "STEM English Projects",
-    image: "/books/stem-projects.jpg",
-    note: "Kết hợp tiếng Anh và tư duy STEM",
-  },
-  {
-    title: "STEM English Projects",
-    image: "/books/stem-projects.jpg",
-    note: "Kết hợp tiếng Anh và tư duy STEM",
-  },
-  {
-    title: "STEM English Projects",
-    image: "/books/stem-projects.jpg",
-    note: "Kết hợp tiếng Anh và tư duy STEM",
-  },
-];
-
-export function BookCarousel() {
-  const scrollRef = useRef<HTMLDivElement | null>(null);
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      if (scrollRef.current) {
-        scrollRef.current.scrollBy({ left: 1, behavior: "smooth" });
-      }
-    }, 20);
-    return () => clearInterval(interval);
-  }, []);
-
-  const scroll = (direction: "left" | "right") => {
-    if (scrollRef.current) {
-      scrollRef.current.scrollBy({
-        left: direction === "left" ? -300 : 300,
-        behavior: "smooth",
-      });
-    }
-  };
-
+interface OtherCourseProps {
+  name: string;
+}
+export const OtherCourses = ({ name }: OtherCourseProps) => {
   return (
-    <section className="w-screen overflow-hidden bg-white py-10 relative">
-      <div className="flex justify-between px-6 mb-4">
-        <h2 className="text-xl font-bold text-gray-800">
-          Tài liệu học nổi bật
+    <section className="py-16 bg-gray-50">
+      <div className="container-custom">
+        <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-8 text-center">
+          Các khóa học liên quan
         </h2>
-        <div className="flex gap-2">
-          <button
-            onClick={() => scroll("left")}
-            className="p-2 rounded-full bg-gray-100 hover:bg-gray-200"
-          >
-            <ChevronLeft className="w-5 h-5" />
-          </button>
-          <button
-            onClick={() => scroll("right")}
-            className="p-2 rounded-full bg-gray-100 hover:bg-gray-200"
-          >
-            <ChevronRight className="w-5 h-5" />
-          </button>
+
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          {courses
+            ?.filter((x) => x?.title !== name)
+            .map((relatedCourse, index) => (
+              <Link
+                key={index}
+                href={`/${relatedCourse.slug}`}
+                className="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-all duration-300 hover:-translate-y-1"
+              >
+                <div className="relative h-48 w-full">
+                  <Image
+                    src={relatedCourse.image || "/placeholder.svg"}
+                    alt={relatedCourse.title}
+                    fill
+                    className="object-cover"
+                  />
+                </div>
+                <div className="p-6">
+                  <h3 className="text-xl font-bold text-gray-900 mb-2">
+                    {relatedCourse.title}
+                  </h3>
+                  <p className="text-gray-700">{relatedCourse.description}</p>
+                </div>
+              </Link>
+            ))}
         </div>
       </div>
-      <div
-        ref={scrollRef}
-        className="flex gap-6 overflow-x-scroll scrollbar-hide px-6"
-        style={{ scrollBehavior: "smooth" }}
-      >
-        {books.map((book, index) => (
-          <div
-            key={index}
-            className="min-w-[180px] flex-shrink-0 bg-gray-50 border border-gray-200 rounded-xl p-4 shadow hover:shadow-md transition-transform duration-300 hover:scale-105"
-          >
-            <div className="relative h-48 w-full mb-3 rounded overflow-hidden">
-              <Image
-                src={book.image}
-                alt={book.title}
-                fill
-                className="object-cover rounded"
-              />
-            </div>
-            <h3 className="text-sm font-semibold text-gray-800 mb-1">
-              {book.title}
-            </h3>
-            <p className="text-xs text-gray-500 italic">{book.note}</p>
-          </div>
-        ))}
-      </div>
-      <style jsx>{`
-        .scrollbar-hide::-webkit-scrollbar {
-          display: none;
-        }
-        .scrollbar-hide {
-          -ms-overflow-style: none;
-          scrollbar-width: none;
-        }
-      `}</style>
     </section>
   );
-}
+};

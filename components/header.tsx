@@ -38,7 +38,7 @@ export function Header() {
               Trang chủ
             </Link>
             <Link
-              href="/about-us"
+              href="/ve-chung-toi"
               className="font-medium hover:text-primary transition-colors"
             >
               Về chúng tôi

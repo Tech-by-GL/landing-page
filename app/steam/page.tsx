@@ -1,5 +1,6 @@
 // src/app/about-us/page.tsx
 import { AboutUs } from "@/components/about-us";
+import { BreadcrumbJsonLd } from "@/components/breadscrum";
 import { MethodologySection } from "@/components/methodology-section";
 import React from "react";
 
@@ -12,6 +13,16 @@ export const metadata = {
 const AboutUsPage = () => {
   return (
     <>
+      <BreadcrumbJsonLd
+            items={[
+              { name: "Trang chủ", url: "https://www.chamchi.vn" },
+              {
+                name: "Phương Pháp STEAM của Chăm Chỉ",
+                url: "https://www.chamchi.vn/steam",
+              },
+            ]}
+          />
+          
       <MethodologySection />
       <AboutUs />
     </>
