@@ -184,13 +184,24 @@ export function Courses() {
                 window.location.href = getLinkHref(course.slug);
               }}
             >
-              <OptimizedImage
+              {/* <OptimizedImage
                 src={course.image}
                 alt={course.title}
                 fill
                 className="object-cover"
                 loadingClassName="bg-primary/10"
-              />
+              /> */}
+
+              <div className="relative w-full h-48 md:h-56 lg:h-64">
+                <Image
+                  src={course.image}
+                  alt={course.title}
+                  fill
+                  className="object-cover"
+                  placeholder="blur"
+                  blurDataURL="/placeholder.png" // hoặc bỏ dòng này nếu không cần placeholder
+                />
+              </div>
 
               <div className="p-4 md:p-6">
                 <h3 className="text-lg md:text-xl font-bold text-gray-900 mb-2">
@@ -241,7 +252,8 @@ export function Courses() {
                   </span>
                 </div>
 
-                <div className="flex justify-between items-center mt-4 gap-5"
+                <div
+                  className="flex justify-between items-center mt-4 gap-5"
                   onClick={(e) => {
                     e.stopPropagation(); // Ngăn chặn sự kiện click lan truyền lên motion.div
                   }}
