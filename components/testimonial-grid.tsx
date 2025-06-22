@@ -75,7 +75,9 @@ export default function TestimonialsGrid() {
                 <Image
                   src={testimonial.image || "/placeholder.svg"}
                   alt={testimonial.name}
-                  fill
+                  // fill
+                  width={400}
+                  height={300}
                   className="object-cover w-full h-full"
                 />
               </div>
@@ -148,7 +150,9 @@ export default function TestimonialsGrid() {
                     <Image
                       src={selectedTestimonial.image || "/placeholder.svg"}
                       alt={selectedTestimonial.name}
-                      fill
+                      // fill
+                      width={168}
+                      height={168}
                       className="object-cover rounded-full"
                     />
                   </div>
