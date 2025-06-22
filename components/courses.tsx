@@ -145,9 +145,7 @@ export function Courses() {
 
   return (
     <section
-      // bg-gradient-to-br from-[#f0f8ff] to-[#ffffff]
-
-      className="min-h-[60vh] md:min-h-[70vh] flex items-center py-8 md:py-12 lg:py-16 bg-gradient-to-br from-[#f0f8ff] to-[#ffffff]"
+      className="min-h-[60vh] md:min-h-[70vh] flex items-center py-8 md:py-12 lg:py-20 bg-gradient-to-br from-[#f0f8ff] to-[#ffffff]"
       id="courses"
       ref={ref}
     >
@@ -192,7 +190,7 @@ export function Courses() {
                 loadingClassName="bg-primary/10"
               /> */}
 
-              <div className="relative w-full h-48 md:h-56 lg:h-64">
+              <div className="relative w-full h-64">
                 <Image
                   src={course.image}
                   alt={course.title}
@@ -261,7 +259,7 @@ export function Courses() {
                   <Link
                     // href={`/courses/${course.slug}`}
                     href={getLinkHref(course.slug)}
-                    className="w-1/2 btn block text-center py-2 px-4 bg-primary text-white hover:bg-primary/90 transition-colors text-sm md:text-base rounded-xl"
+                    className="w-1/2 btn block text-center px-6 py-3 bg-primary text-white hover:bg-primary/90 transition-colors text-sm md:text-base rounded-xl"
                   >
                     Tìm hiểu thêm
                   </Link>

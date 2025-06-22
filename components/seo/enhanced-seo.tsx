@@ -65,7 +65,7 @@ export function EnhancedSEO({
   section,
   tags = [],
   locale = "vi_VN",
-  siteName = "Chamchi - Trung tâm Anh ngữ STEAM",
+  siteName = "Anh Ngữ Chăm Chỉ",
   noindex = false,
   alternateLanguages = [],
   articleSchema,

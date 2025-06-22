@@ -76,7 +76,7 @@ export function Header() {
           </nav>
 
           <div className="hidden md:block">
-            <Link href="#courses" className="btn-primary rounded-xl">
+            <Link href="/#courses" className="btn-primary rounded-xl">
               Khám phá khóa học
             </Link>
           </div>

@@ -70,7 +70,8 @@ export default function TestimonialsGrid() {
               className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 cursor-pointer"
               onClick={() => setSelectedTestimonial(testimonial)}
             >
-              <div className="relative h-80 w-full">
+              {/* <div className="relative h-80 w-full"> */}
+              <div className="relative w-full min-h-[20rem]">
                 <Image
                   src={testimonial.image || "/placeholder.svg"}
                   alt={testimonial.name}
@@ -88,7 +89,8 @@ export default function TestimonialsGrid() {
                 <div className="flex mb-2">
                   {renderStars(testimonial.rating)}
                 </div>
-                <p className="text-sm text-gray-700 mb-4">
+                {/* <p className="text-sm text-gray-700 mb-4"> */}
+                <p className="text-sm text-gray-700 mb-4 line-clamp-4 overflow-hidden">
                   "{testimonial.quote}"
                 </p>
                 <div className="flex justify-between text-xs text-gray-500">

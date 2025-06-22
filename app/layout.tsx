@@ -68,7 +68,7 @@ export const metadata: Metadata = {
     title: "Chamchi - Trung tâm Anh ngữ STEAM & Trí Tuệ Nhân Tạo",
     description:
       "Chăm Chỉ là trung tâm Anh ngữ hiện đại dạy tiếng Anh thông qua phương pháp STEAM kết hợp Trí Tuệ Nhân Tạo.",
-    siteName: "Chamchi",
+    siteName: "Anh Ngữ Chăm Chỉ",
     images: [
       {
         url: "https://chamchi.vn/og-image.png",
@@ -119,6 +119,8 @@ export default function RootLayout({
   return (
     <html lang="vi" className={nunito.variable}>
       <Head>
+        <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+        <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
         <title>Anh Ngữ Chăm Chỉ</title>
         <meta name="description" content={`
           Anh Ngữ Chăm Chỉ là trung tâm Anh Ngữ ứng dụng trí tuệ nhân tạo (AI) vào dạy học để nâng cao chất lượng giảng dạy. Chúng tôi không chạy theo kinh doanh – chỉ tập trung vào học trò. Tại đây, học viên được chăm sóc kỹ lưỡng và học tiếng Anh theo cách hiệu quả nhất.
@@ -130,6 +132,7 @@ export default function RootLayout({
               "@context": "https://schema.org",
               "@type": "Organization",
               name: "Anh Ngữ Chăm Chỉ",
+              alternateName: "Chamchi",
               url: "https://chamchi.vn",
               logo: "https://chamchi.sgp1.cdn.digitaloceanspaces.com/website/ChamChiHatLogo.png",
             }),

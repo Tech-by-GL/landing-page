@@ -147,7 +147,7 @@ export default function From10to12() {
                 <RegisterNow title="Đăng ký tư vấn miễn phí" color="" />
                 <Link
                   href="#curriculum"
-                  className="btn-accent text-sm font-bold px-6 py-3 rounded-xl transition"
+                  className="btn-accent text-sm font-bold px-6 py-3 rounded-xl transition  w-52"
                 >
                   Xem chương trình học
                 </Link>

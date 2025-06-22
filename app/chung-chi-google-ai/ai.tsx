@@ -169,7 +169,7 @@ export default function GoogleAICert() {
                 <RegisterNow title="Đăng ký tư vấn miễn phí" color="" />
                 <Link
                   href="#curriculum"
-                  className="btn-accent text-sm font-bold px-6 py-3 rounded-xl transition"
+                  className="btn-accent text-sm font-bold px-6 py-3 rounded-xl transition  w-52"
                 >
                   Xem chương trình học
                 </Link>
@@ -331,13 +331,13 @@ export default function GoogleAICert() {
                   </h5>
                   <ul className="text-sm text-gray-800 space-y-1">
                     <li>
-                      <strong>Độ tuổi:</strong> Từ lớp 5 trở lên
+                      <strong>Độ tuổi:</strong> Từ lớp 4 trở lên
                     </li>
                     <li>
                       <strong>Trình độ:</strong> Không yêu cầu
                     </li>
                     <li>
-                      <strong>Sĩ số lớp:</strong> Tối đa 15 học viên
+                      <strong>Sĩ số lớp:</strong> Tối đa 15 học viên / Lớp
                     </li>
                     <li>
                       <strong>Học phí:</strong> 500.000đ / Khoá (đã bao gồm tính

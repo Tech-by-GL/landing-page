@@ -144,7 +144,7 @@ export default function IELTSPage() {
 
               <div className="flex flex-col sm:flex-row gap-4">
                 <RegisterNow title="Đăng ký tư vấn miễn phí" color="" />
-                <Link href="#curriculum" className="btn-accent text-sm font-bold px-6 py-3 rounded-xl transition">
+                <Link href="#curriculum" className="btn-accent text-sm font-bold px-6 py-3 rounded-xl transition  w-52">
                   Xem chương trình học
                 </Link>
               </div>
