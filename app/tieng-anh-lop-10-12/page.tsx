@@ -6,6 +6,7 @@ export const metadata = {
 
 import { BreadcrumbJsonLd } from "@/components/breadscrum";
 import From10to12 from "./1012";
+import { Address } from "@/components/address";
 
 export default function Page() {
   return (
@@ -21,6 +22,7 @@ export default function Page() {
       />
 
       <From10to12 />
+      <Address />
     </>
   );
 }

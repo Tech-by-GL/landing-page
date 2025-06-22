@@ -11,7 +11,7 @@ import { Address } from "@/components/address";
 export const metadata: Metadata = {
   title: "Anh Ngữ Chăm Chỉ - Home",
   description:
-    "Chamchi là trung tâm Anh ngữ hiện đại dạy tiếng Anh thông qua phương pháp STEAM cho học sinh từ lớp 6 trở lên. Khám phá các khóa học KET, PET, IELTS và tiếng Anh STEAM với giải pháp học tập đột phá.",
+    "Chamchi là trung tâm Anh ngữ hiện đại dạy tiếng Anh thông qua phương pháp STEAM kết hợp với Trí Tuệ Nhân Tạo. Khám phá các khóa học KET, PET, IELTS và tiếng Anh STEAM với giải pháp học tập đột phá.",
   alternates: {
     canonical: "/",
   },

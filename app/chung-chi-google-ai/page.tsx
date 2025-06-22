@@ -5,6 +5,7 @@ export const metadata = {
 
 import { BreadcrumbJsonLd } from "@/components/breadscrum";
 import GoogleAICert from "./ai";
+import { Address } from "@/components/address";
 
 export default function Page() {
   return (
@@ -19,6 +20,7 @@ export default function Page() {
         ]}
       />
       <GoogleAICert />
+      <Address />
     </>
   );
 }

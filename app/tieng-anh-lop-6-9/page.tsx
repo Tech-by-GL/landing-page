@@ -1,5 +1,6 @@
 import { BreadcrumbJsonLd } from "@/components/breadscrum";
 import ClassFrom6to9 from "./69";
+import { Address } from "@/components/address";
 
 export const metadata = {
   title: "Tiếng Anh Lớp 6 đến lớp 9 | Anh Ngữ Chăm Chỉ",
@@ -21,6 +22,7 @@ export default function Page() {
       />
 
       <ClassFrom6to9 />
+      <Address />
     </>
   );
 }

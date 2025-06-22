@@ -86,7 +86,7 @@ export const metadata: Metadata = {
   //   card: "summary_large_image",
   //   title: "Chamchi - Trung tâm Anh ngữ STEAM",
   //   description:
-  //     "Chamchi là trung tâm Anh ngữ hiện đại dạy tiếng Anh thông qua phương pháp STEAM cho học sinh từ lớp 6 trở lên.",
+  //     "Chamchi là trung tâm Anh ngữ hiện đại dạy tiếng Anh thông qua phương pháp STEAM kết hợp với Trí Tuệ Nhân Tạo.",
   //   images: ["https://chamchi.vn/og-image.png"],
   //   creator: "@chamchi",
   //   site: "@chamchi",

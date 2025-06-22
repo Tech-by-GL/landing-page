@@ -99,11 +99,10 @@ export default function GoogleAICert() {
                 Khoá học AI với Google
               </h1>
               <p className="text-lg text-gray-700 mb-8">
-                Khóa học AI dành cho học sinh từ lớp 5, giúp học viên nắm vững
+                Khóa học AI dành cho học sinh từ lớp 4, giúp học viên nắm vững
                 kiến thức và kỹ năng cần thiết để trở thành chuyên gia AI. Được
                 thiết kế bởi các chuyên gia hàng đầu, khóa học cung cấp lộ trình
-                học tập rõ ràng, từ cơ bản đến nâng cao, với chứng chỉ Google AI
-                Essentials công nhận năng lực.
+                học tập rõ ràng, từ cơ bản đến nâng cao, với chứng chỉ Introduction to AI do GOOGLE công nhận năng lực.
               </p>
 
               <div className="grid grid-cols-2 gap-4 mb-8">
@@ -135,7 +134,7 @@ export default function GoogleAICert() {
                     <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
                   </svg>
                   <span className="text-gray-700">
-                    Chuẩn đầu ra: Chứng chỉ Google AI
+                    Chuẩn đầu ra: Chứng chỉ Introduction to AI của Google
                   </span>
                 </div>
               </div>
@@ -182,7 +181,7 @@ export default function GoogleAICert() {
                   src={
                     "https://chamchi.sgp1.cdn.digitaloceanspaces.com/website/student-with-ai.png"
                   }
-                  alt={"Chương trình KET"}
+                  alt={"Chương trình AI"}
                   fill
                   className="object-cover"
                 />
@@ -198,7 +197,7 @@ export default function GoogleAICert() {
           <div className="lg:col-span-2 space-y-8">
             <div>
               <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-2">
-                Khoá học Trí Tuệ Nhân Tạo với Google AI Essentials
+                Khoá học Trí Tuệ Nhân Tạo với Google Introduction to AI
               </h2>
               <p className="text-gray-700 text-lg">
                 Với sự hỗ trợ từ học viện đào tạo Trí Tuệ Nhân Tạo dành cho các

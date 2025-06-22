@@ -9,11 +9,11 @@ interface OrganizationSchemaProps {
 }
 
 export function OrganizationSchema({
-  name = "Chamchi",
+  name = "Anh Ngữ Chăm Chỉ",
   url = "https://chamchi.vn",
   logo = "https://chamchi.vn/logo.png",
-  description = "Chamchi là trung tâm Anh ngữ hiện đại dạy tiếng Anh thông qua phương pháp STEAM cho học sinh từ lớp 6 trở lên.",
-  sameAs = ["https://facebook.com/chamchi", "https://instagram.com/chamchi", "https://youtube.com/chamchi"],
+  description = "Chamchi là trung tâm Anh ngữ hiện đại dạy tiếng Anh thông qua phương pháp STEAM kết hợp Trí Tuệ Nhân Tạo.",
+  sameAs = ["https://www.facebook.com/ChamChiLanguageSchool/"],
 }: OrganizationSchemaProps) {
   const orgSchema = {
     "@context": "https://schema.org",
@@ -25,17 +25,17 @@ export function OrganizationSchema({
     sameAs,
     address: {
       "@type": "PostalAddress",
-      streetAddress: "123 Đường Nguyễn Huệ",
-      addressLocality: "Quận 1",
+      streetAddress: "18 Đường 8, Phường Trường Thọ",
+      addressLocality: "Quận Thủ Đức",
       addressRegion: "TP. Hồ Chí Minh",
       postalCode: "70000",
       addressCountry: "VN",
     },
     contactPoint: {
       "@type": "ContactPoint",
-      telephone: "+84-123-456-789",
+      telephone: "0902-336-152",
       contactType: "customer service",
-      email: "info@chamchi.vn",
+      email: "team@chamchi.vn",
       availableLanguage: ["Vietnamese", "English"],
     },
   }
@@ -120,7 +120,7 @@ interface WebsiteSchemaProps {
 }
 
 export function WebsiteSchema({
-  name = "Chamchi - Trung tâm Anh ngữ STEAM",
+  name = "Anh Ngữ Chăm Chỉ",
   url = "https://chamchi.vn",
   description = "Chamchi là trung tâm Anh ngữ hiện đại dạy tiếng Anh thông qua phương pháp STEAM cho học sinh từ lớp 6 trở lên.",
 }: WebsiteSchemaProps) {

@@ -20,7 +20,7 @@ export function Footer() {
             </Link>
             <p className="mt-4 text-white/80" itemProp="description">
               Chamchi là trung tâm Anh ngữ hiện đại dạy tiếng Anh thông qua
-              phương pháp STEAM cho học sinh từ lớp 6 trở lên.
+              phương pháp STEAM kết hợp với Trí Tuệ Nhân Tạo.
             </p>
             <meta itemProp="name" content="Chamchi English Center" />
             <meta itemProp="url" content="https://chamchi.vn" />
@@ -77,7 +77,7 @@ export function Footer() {
             <ul className="space-y-2">
               <li>
                 <Link
-                  href="/"
+                  href="/tieng-anh-tre-em"
                   className="text-white/80 hover:text-accent transition-colors"
                 >
                   Tiếng Anh Lớp 1-5
@@ -85,7 +85,7 @@ export function Footer() {
               </li>
               <li>
                 <Link
-                  href="/courses/luyen-thi-pet"
+                  href="/tieng-anh-lop-6-9"
                   className="text-white/80 hover:text-accent transition-colors"
                 >
                   Tiếng Anh Lớp 6-9
@@ -93,7 +93,7 @@ export function Footer() {
               </li>
               <li>
                 <Link
-                  href="/courses/luyen-thi-ielts"
+                  href="/tieng-anh-lop-10-12"
                   className="text-white/80 hover:text-accent transition-colors"
                 >
                   Tiếng Anh Lớp 10-12
@@ -101,7 +101,7 @@ export function Footer() {
               </li>
               <li>
                 <Link
-                  href="#"
+                  href="/tieng-anh-cho-nguoi-di-lam"
                   className="text-white/80 hover:text-accent transition-colors"
                 >
                   Tiếng Anh Cho Người Đi Làm
@@ -109,7 +109,7 @@ export function Footer() {
               </li>
               <li>
                 <Link
-                  href="/courses/tieng-anh-steam"
+                  href="/tieng-anh-ielts"
                   className="text-white/80 hover:text-accent transition-colors"
                 >
                   Chứng chỉ IELTS
@@ -118,7 +118,7 @@ export function Footer() {
 
               <li>
                 <Link
-                  href="#"
+                  href="/chung-chi-google-ai"
                   className="text-white/80 hover:text-accent transition-colors"
                 >
                   Chứng Chỉ Google AI
