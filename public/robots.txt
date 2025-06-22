@@ -1,14 +1,7 @@
-# *
 User-agent: *
 Allow: /
 
-# Googlebot-Image
 User-agent: Googlebot-Image
 Disallow: /images/private/*
 
-# Host
-Host: https://www.chamchi.vn
-
-# Sitemaps
 Sitemap: https://www.chamchi.vn/sitemap.xml
-Sitemap: https://www.chamchi.vn/my-custom-sitemap.xml
