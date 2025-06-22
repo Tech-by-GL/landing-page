@@ -34,7 +34,7 @@ export default function TestimonialsGrid() {
 
   return (
     <section
-      className="min-h-screen py-16 px-4 bg-gradient-to-br from-primary/5 via-white to-accent/5"
+      className="min-h-[80vh] py-16 px-4 bg-gradient-to-br from-primary/5 via-white to-accent/5"
       ref={ref}
       id="testimonials"
     >
