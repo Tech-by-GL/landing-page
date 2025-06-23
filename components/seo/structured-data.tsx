@@ -122,7 +122,7 @@ interface WebsiteSchemaProps {
 export function WebsiteSchema({
   name = "Anh Ngữ Chăm Chỉ",
   url = "https://chamchi.vn",
-  description = "Chamchi là trung tâm Anh ngữ hiện đại dạy tiếng Anh thông qua phương pháp STEAM cho học sinh từ lớp 6 trở lên.",
+  description = "Chamchi là trung tâm Anh ngữ hiện đại dạy tiếng Anh thông qua phương pháp STEAM kết hợp Trí Tuệ Nhân Tạo.",
 }: WebsiteSchemaProps) {
   const websiteSchema = {
     "@context": "https://schema.org",

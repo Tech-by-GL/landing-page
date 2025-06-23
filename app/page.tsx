@@ -47,7 +47,7 @@ export default function Home() {
     {
       question: "Chăm Chỉ dạy những khóa học nào?",
       answer:
-        "Chăm cung cấp các khóa học luyện thi KET, PET, IELTS và tiếng Anh STEAM cho học sinh từ lớp 6 trở lên.",
+        "Chăm cung cấp các khóa học luyện thi KET, PET, IELTS và tiếng Anh STEAM kết hợp Trí Tuệ Nhân Tạo.",
     },
     {
       question: "Phương pháp giảng dạy của Chamchi có gì đặc biệt?",
