@@ -18,11 +18,11 @@ const AboutUsPage = () => {
         title="Phương Pháp STEAM | Anh Ngữ Chăm Chỉ"
         description="Phương pháp STEAM tại Anh Ngữ Chăm Chỉ kết hợp giữa khoa học, công nghệ, kỹ thuật, nghệ thuật và toán học để mang đến trải nghiệm học tập toàn diện và hiện đại nhất cho học viên."
         keywords="Phương pháp STEAM, Anh Ngữ Chăm Chỉ, học tiếng Anh, giáo dục hiện đại, khoa học, công nghệ, kỹ thuật, nghệ thuật, toán học"
-        ogImage="/og-image.png"
+        ogImage="https://www.chamchi.vn/og-image.png"
         ogType="website"
         canonicalUrl="https://www.chamchi.vn/steam"
       />
-      
+
       <BreadcrumbJsonLd
             items={[
               { name: "Trang chủ", url: "https://www.chamchi.vn" },

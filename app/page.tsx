@@ -7,6 +7,7 @@ import { SteamBriefSection } from "@/components/steam-section";
 import { VideoCoreValue } from "@/components/video-core-values";
 import TestimonialsGrid from "@/components/testimonial-grid";
 import { Address } from "@/components/address";
+import { MetaTags } from "@/components/seo/meta-tags";
 
 export const metadata: Metadata = {
   title: "Anh Ngữ Chăm Chỉ - Home",
@@ -78,6 +79,13 @@ export default function Home() {
 
   return (
     <>
+      <MetaTags
+        title="Anh Ngữ Chăm Chỉ - Trung tâm Anh ngữ STEAM & Trí Tuệ Nhân Tạo"
+        description="Chamchi là trung tâm Anh ngữ hiện đại dạy tiếng Anh thông qua phương pháp STEAM kết hợp với Trí Tuệ Nhân Tạo. Khám phá các khóa học KET, PET, IELTS và tiếng Anh STEAM với giải pháp học tập đột phá."
+        ogImage="https://chamchi.vn/og-image.png"
+        ogType="website"
+        canonicalUrl="https://chamchi.vn"
+      />
       <FAQSchema questions={faqQuestions} />
 
       <HeroSection />
@@ -91,7 +99,7 @@ export default function Home() {
       <GallerySection />
 
       <TestimonialsGrid />
-      
+
       <Address />
 
       {/* <BlogSection /> */}

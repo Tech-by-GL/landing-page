@@ -16,7 +16,7 @@ export default function Page() {
         title="Tiếng Anh Lớp 10 đến lớp 12 | Anh Ngữ Chăm Chỉ"
         description="Chương trình tiếng Anh từ lớp 10 đến lớp 12 tại Anh Ngữ Chăm Chỉ giúp học sinh nắm vững kiến thức và kỹ năng cần thiết để thành công trong kỳ thi tốt nghiệp và các kỳ thi quốc tế."
         keywords="Tiếng Anh lớp 10, Tiếng Anh lớp 11, Tiếng Anh lớp 12, Anh Ngữ Chăm Chỉ, Chamchi, chương trình tiếng Anh, học tiếng Anh, kỹ năng tiếng Anh"
-        ogImage="/og-image.png"
+        ogImage="https://www.chamchi.vn/og-image.png"
         ogType="website"
         canonicalUrl="https://www.chamchi.vn/tieng-anh-lop-10-12"
       />

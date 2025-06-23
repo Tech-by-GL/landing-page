@@ -16,7 +16,7 @@ export default function Page() {
         title="Chúng tôi là Chăm Chỉ"
         description="Khám phá hành trình và sứ mệnh của Anh Ngữ Chăm Chỉ trong việc mang đến những khóa học tiếng Anh chất lượng cao, giúp học viên chinh phục tiếng Anh một cách hiệu quả và tự tin."
         keywords="Chăm Chỉ, Anh Ngữ Chăm Chỉ, Chamchi, về chúng tôi, sứ mệnh, hành trình, khóa học tiếng Anh"
-        ogImage="/og-image.png"
+        ogImage="https://www.chamchi.vn/og-image.png"
         ogType="website"
         canonicalUrl="https://www.chamchi.vn/ve-chung-toi"
       />

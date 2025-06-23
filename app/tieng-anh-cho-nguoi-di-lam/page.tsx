@@ -16,7 +16,7 @@ export default function Page() {
         title="Tiếng Anh Cho Người Đi Làm | Anh Ngữ Chăm Chỉ"
         description="Chương trình IELTS tại Anh Ngữ Chăm Chỉ giúp học sinh chuẩn bị tốt nhất cho kỳ thi IELTS, với phương pháp học STEAM Hiện đại, cách công cụ AI mạnh mẽ, và đội ngũ giáo viên giàu kinh nghiệm."
         keywords="Tiếng Anh cho người đi làm, Anh Ngữ Chăm Chỉ, Chamchi, chương trình IELTS, học tiếng Anh, phương pháp STEAM, giáo viên giàu kinh nghiệm"
-        ogImage="/og-image.png"
+        ogImage="https://www.chamchi.vn/og-image.png"
         ogType="website"
         canonicalUrl="https://www.chamchi.vn/tieng-anh-cho-nguoi-di-lam"
       />

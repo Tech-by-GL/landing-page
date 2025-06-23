@@ -15,11 +15,11 @@ export default function Page() {
         title="Google AI Cert | Anh Ngữ Chăm Chỉ"
         description="Khoá học lấy tính chỉ Google AI do Chăm Chỉ thiết kế."
         keywords="Google AI, chứng chỉ Google AI, khoá học Google AI, Anh Ngữ Chăm Chỉ, Chamchi, tiếng Anh, STEAM, Trí Tuệ Nhân Tạo"
-        ogImage="/og-image.png"
+        ogImage="https://www.chamchi.vn/og-image.png"
         ogType="website"
         canonicalUrl="https://www.chamchi.vn/chung-chi-google-ai"
       />
-      
+
       <BreadcrumbJsonLd
         items={[
           { name: "Trang chủ", url: "https://www.chamchi.vn" },
