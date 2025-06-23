@@ -12,7 +12,7 @@ export default function CallbackForm() {
 
     setLoading(true);
     try {
-      await fetch("https://formsubmit.co/ajax/your-email@example.com", {
+      await fetch("https://formsubmit.co/ajax/ducthang@chamchi.ai", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

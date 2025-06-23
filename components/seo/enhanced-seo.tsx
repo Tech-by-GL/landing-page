@@ -74,7 +74,6 @@ export function EnhancedSEO({
   faqSchema,
 }: EnhancedSEOProps) {
   // Format the title
-  const formattedTitle = title.includes("Chamchi") ? title : `${title} | Chamchi`
 
   // Generate JSON-LD schema
   const generateSchemaMarkup = () => {
@@ -207,7 +206,7 @@ export function EnhancedSEO({
     <>
       <Head>
         {/* Basic Meta Tags */}
-        <title>{formattedTitle}</title>
+        <title>{siteName}</title>
         <meta name="description" content={description} />
         {keywords.length > 0 && <meta name="keywords" content={keywords.join(", ")} />}
         <meta name="author" content={author} />
@@ -227,7 +226,7 @@ export function EnhancedSEO({
 
         {/* Open Graph / Facebook */}
         <meta property="og:type" content={ogType} />
-        <meta property="og:title" content={formattedTitle} />
+        <meta property="og:title" content={siteName} />
         <meta property="og:description" content={description} />
         <meta property="og:url" content={canonical} />
         <meta property="og:image" content={ogImage} />
@@ -242,7 +241,7 @@ export function EnhancedSEO({
 
         {/* Twitter */}
         <meta name="twitter:card" content={twitterCard} />
-        <meta name="twitter:title" content={formattedTitle} />
+        <meta name="twitter:title" content={siteName} />
         <meta name="twitter:description" content={description} />
         <meta name="twitter:image" content={ogImage} />
         <meta name="twitter:site" content="@chamchi" />
