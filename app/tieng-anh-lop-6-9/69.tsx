@@ -19,6 +19,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { OtherCourses } from "../tieng-anh-tre-em/children-english";
 import RegisterNow from "@/components/register";
+import CallbackForm from "@/components/call-back-form";
 
 export default function ClassFrom6to9() {
   return (
@@ -351,13 +352,7 @@ export default function ClassFrom6to9() {
                   </h5>
 
                   {/*INput phone number   */}
-                  <div>
-                    {/* <label
-                      htmlFor="phone"
-                      className="block text-sm font-medium text-gray-700 mb-1 mt-2"
-                    >
-                      Số điện thoại của bạn
-                    </label> */}
+                  {/* <div>
                     <input
                       type="tel"
                       id="phone"
@@ -372,7 +367,8 @@ export default function ClassFrom6to9() {
                     className=" mt-2 w-full block text-center px-6 py-2 bg-primary text-white text-sm font-semibold rounded-xl hover:bg-primary/90 transition"
                   >
                     Nhận tư vấn miễn phí
-                  </Link>
+                  </Link> */}
+                  <CallbackForm />
                 </div>
               </div>
             </div>

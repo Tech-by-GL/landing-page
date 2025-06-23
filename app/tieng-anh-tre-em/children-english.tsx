@@ -1,5 +1,6 @@
 "use client";
 
+import CallbackForm from "@/components/call-back-form";
 import { courses } from "@/components/courses";
 // app/ket/page.tsx
 import { EducationalPhilosophy } from "@/components/educational-philosophy";
@@ -405,13 +406,7 @@ export default function TiengAnhTreEm() {
                   </h5>
 
                   {/*INput phone number   */}
-                  <div>
-                    {/* <label
-                      htmlFor="phone"
-                      className="block text-sm font-medium text-gray-700 mb-1 mt-2"
-                    >
-                      Số điện thoại của bạn
-                    </label> */}
+                  {/* <div>
                     <input
                       type="tel"
                       id="phone"
@@ -426,7 +421,8 @@ export default function TiengAnhTreEm() {
                     className=" mt-2 w-full block text-center px-6 py-2 bg-primary text-white text-sm font-semibold rounded-xl hover:bg-primary/90 transition"
                   >
                     Nhận tư vấn miễn phí
-                  </Link>
+                  </Link> */}
+                  <CallbackForm />
                 </div>
               </div>
             </div>

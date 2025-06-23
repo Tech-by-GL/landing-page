@@ -15,11 +15,22 @@ export default function RegisterNow({ title, color }: RegisterNowProps) {
   const handleSubmit = async () => {
     if (!phone) return;
     setLoading(true);
+
     try {
-      await sendTelegramMessage(
-        `📞 PHHS đăng ký khóa học cho bé. SĐT: ${phone}`,
-        "phhs"
-      );
+      await fetch("https://formsubmit.co/ajax/ducthang@chamchi.ai", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: JSON.stringify({
+          phone,
+          _subject: "📞 PHHS đăng ký khóa học mới",
+          _captcha: "false",
+          _template: "table",
+        }),
+      });
+
       setSuccess(true);
       setPhone("");
     } catch (err) {
@@ -29,6 +40,7 @@ export default function RegisterNow({ title, color }: RegisterNowProps) {
       setLoading(false);
     }
   };
+
 
   return (
     <>

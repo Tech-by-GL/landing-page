@@ -169,7 +169,10 @@ export default function WorkingPeoplePage() {
               </div> */}
               <div className="flex flex-col sm:flex-row gap-4">
                 <RegisterNow title="Đăng ký tư vấn miễn phí" color="" />
-                <Link href="#curriculum" className="btn-accent text-sm font-bold px-6 py-3 rounded-xl transition  w-52">
+                <Link
+                  href="#curriculum"
+                  className="btn-accent text-sm font-bold px-6 py-3 rounded-xl transition  w-52"
+                >
                   Xem chương trình học
                 </Link>
               </div>
@@ -400,13 +403,7 @@ export default function WorkingPeoplePage() {
                   </h5>
 
                   {/*INput phone number   */}
-                  <div>
-                    {/* <label
-                      htmlFor="phone"
-                      className="block text-sm font-medium text-gray-700 mb-1 mt-2"
-                    >
-                      Số điện thoại của bạn
-                    </label> */}
+                  {/* <div>
                     <input
                       type="tel"
                       id="phone"
@@ -421,7 +418,8 @@ export default function WorkingPeoplePage() {
                     className=" mt-2 w-full block text-center px-6 py-2 bg-primary text-white text-sm font-semibold rounded-xl hover:bg-primary/90 transition"
                   >
                     Nhận tư vấn miễn phí
-                  </Link>
+                  </Link> */}
+                  <CallbackForm />
                 </div>
               </div>
             </div>
@@ -469,9 +467,7 @@ export default function WorkingPeoplePage() {
               </li>
             </ul>
 
-            <RegisterNow
-              title="Đăng ký kiểm tra đầu vào miễn phí"
-              color="" />
+            <RegisterNow title="Đăng ký kiểm tra đầu vào miễn phí" color="" />
           </div>
         </div>
       </section>
@@ -630,6 +626,7 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 import { CourseGallery } from "../tieng-anh-lop-6-9/69";
 import { OtherCourses } from "../tieng-anh-tre-em/children-english";
 import RegisterNow from "@/components/register";
+import CallbackForm from "@/components/call-back-form";
 
 // import Image from "next/image";
 

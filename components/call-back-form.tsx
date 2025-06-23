@@ -1,7 +1,6 @@
 "use client";
 
 import { useState } from "react";
-import { sendTelegramMessage } from "./telegram";
 
 export default function CallbackForm() {
   const [phone, setPhone] = useState("");
@@ -9,14 +8,24 @@ export default function CallbackForm() {
   const [showModal, setShowModal] = useState(false);
 
   const handleSubmit = async () => {
-    if (!phone) return; // đơn giản: không gửi nếu chưa nhập
+    if (!phone) return;
 
     setLoading(true);
     try {
-      await sendTelegramMessage(
-        `📞 PHHS cần tư vấn AI. SĐT: ${phone}`,
-        "phhs"
-      );
+      await fetch("https://formsubmit.co/ajax/your-email@example.com", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: JSON.stringify({
+          phone,
+          _subject: "📞 PHHS cần tư vấn AI",
+          _captcha: "false",
+          _template: "table",
+        }),
+      });
+
       setPhone("");
       setShowModal(true);
     } catch (err) {
@@ -38,6 +47,7 @@ export default function CallbackForm() {
           onChange={(e) => setPhone(e.target.value)}
           placeholder="Nhập số điện thoại"
           className="mt-2 w-full px-4 py-2 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-primary text-sm"
+          required
         />
 
         <button
@@ -53,11 +63,10 @@ export default function CallbackForm() {
       {showModal && (
         <div className="fixed inset-0 z-[60] flex items-center justify-center bg-black/40">
           <div className="bg-white rounded-xl p-6 max-w-sm w-[90%] text-center space-y-4 shadow-xl">
-            <h3 className="text-xl font-bold text-primary">
-              Cảm ơn bạn!
-            </h3>
+            <h3 className="text-xl font-bold text-primary">Cảm ơn bạn!</h3>
             <p className="text-gray-700">
-              Chăm Chỉ sẽ liên hệ với bạn trong vòng <strong>15&nbsp;phút</strong>.
+              Chăm Chỉ sẽ liên hệ với bạn trong vòng{" "}
+              <strong>15&nbsp;phút</strong>.
             </p>
             <button
               onClick={() => setShowModal(false)}
