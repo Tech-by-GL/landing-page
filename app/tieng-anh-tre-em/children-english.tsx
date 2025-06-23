@@ -571,7 +571,8 @@ export function StarterToFlyerRoadmap() {
         </h3>
         {/* </h2> */}
 
-        <div className="relative hidden lg:flex items-center justify-between gap-8">
+        {/* <div className="relative hidden lg:flex items-center justify-between gap-8"> */}
+        <div className="relative hidden lg:flex items-center justify-between gap-8 z-0">
           {/* Line connecting steps */}
           <div className="absolute left-0 right-0 h-1 bg-gradient-to-r from-pink-400 via-yellow-400 to-green-500 top-1/2 z-0 rounded-full"></div>
 

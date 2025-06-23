@@ -99,11 +99,13 @@ export default function GoogleAICert() {
                 Khoá học AI với Google
               </h1>
               <p className="text-lg text-gray-700 mb-8">
-                Khóa học AI dành cho học sinh từ lớp 4, giúp học viên nắm vững
-                kiến thức và kỹ năng cần thiết để trở thành chuyên gia AI. Được
-                thiết kế bởi các chuyên gia hàng đầu, khóa học cung cấp lộ trình
-                học tập rõ ràng, từ cơ bản đến nâng cao, với chứng chỉ
-                Introduction to AI do GOOGLE công nhận năng lực.
+                Khóa học AI dành cho học sinh từ lớp 4 giúp các em hiểu và sử
+                dụng Trí Tuệ Nhân Tạo một cách đơn giản, dễ tiếp cận. Với lộ
+                trình rõ ràng từ cơ bản đến nâng cao, khóa học được thiết kế bởi
+                các chuyên gia hàng đầu trong lĩnh vực, giúp học sinh làm quen
+                sớm với công nghệ tương lai. Sau khi hoàn thành, học viên sẽ
+                nhận chứng chỉ Introduction to AI do GOOGLE cấp – một bước khởi
+                đầu vững chắc cho hành trang công nghệ của con.
               </p>
 
               <div className="grid grid-cols-2 gap-4 mb-8">
@@ -192,28 +194,29 @@ export default function GoogleAICert() {
         </div>
       </section>
 
-      <section className="py-20 bg-white">
+      <section className="py-20 bg-white" id="curriculum">
         <div className="container-custom grid grid-cols-1 lg:grid-cols-3 gap-8">
           {/* Left Content */}
           <div className="lg:col-span-2 space-y-8">
             <div>
               <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-2">
-                Khoá học Trí Tuệ Nhân Tạo với Google Introduction to AI
+                Khoá học AI cho học sinh từ lớp 4
               </h2>
               <p className="text-gray-700 text-lg">
-                Với sự hỗ trợ từ học viện đào tạo Trí Tuệ Nhân Tạo dành cho các
-                doanh nghiệp lớn Langcraft Education, khóa học này được thiết kế
-                để giúp học viên nắm vững kiến thức và kỹ năng cần thiết để sử
-                dụng AI hiệu quả trong học tập và công việc. Học viên sẽ được
-                học từ cơ bản đến nâng cao, bao gồm các chủ đề như:
+                Với sự hỗ trợ từ Langcraft Education – học viện đào tạo Trí Tuệ
+                Nhân Tạo cho các doanh nghiệp lớn, khóa học được thiết kế nhằm
+                giúp học viên làm chủ kiến thức và kỹ năng cần thiết để ứng dụng
+                AI hiệu quả trong học tập và công việc. Học viên sẽ được học
+                theo lộ trình từ cơ bản đến nâng cao, bao gồm các chủ đề như:
                 <ul className="list-disc ml-6 mt-2 space-y-2">
                   <li>
                     <strong>Giới thiệu về AI:</strong> Hiểu rõ AI là gì, các ứng
                     dụng và xu hướng hiện tại.
                   </li>
                   <li>
-                    <strong>Sử dụng ChatGPT hiệu quả:</strong> Cách đặt câu hỏi,
-                    tối ưu hóa kết quả và ứng dụng trong học tập.
+                    <strong>Sử dụng ChatGPT / Google-GEMINI hiệu quả:</strong>{" "}
+                    Cách đặt câu hỏi, tối ưu hóa kết quả và ứng dụng trong học
+                    tập.
                   </li>
                   <li>
                     <strong>Sử dụng các công cụ AI để học tiếng Anh:</strong>{" "}
@@ -221,9 +224,9 @@ export default function GoogleAICert() {
                     dụng học tiếng Anh khác.
                   </li>
                   <li>
-                    <strong>Chứng chỉ Google Introduction to AI:</strong> Đạt được
-                    chứng chỉ công nhận năng lực AI từ Google, với sự hướng dẫn
-                    trực tiếp từ đội ngũ giáo viên.
+                    <strong>Chứng chỉ Google Introduction to AI:</strong> Đạt
+                    được chứng chỉ công nhận năng lực AI từ Google, với sự hướng
+                    dẫn trực tiếp từ đội ngũ giáo viên.
                   </li>
                 </ul>
               </p>
@@ -249,7 +252,8 @@ export default function GoogleAICert() {
                   chuẩn bị có kỳ thi chứng chỉ Google Introduction to AI.
                 </li>
                 <li>
-                  <strong>Ngày 3:</strong> Học sinh thi chứng chỉ Google Introduction to AI, nhận chứng chỉ và đánh giá kết quả.
+                  <strong>Ngày 3:</strong> Học sinh thi chứng chỉ Google
+                  Introduction to AI, nhận chứng chỉ và đánh giá kết quả.
                 </li>
               </ul>
             </div>
@@ -315,11 +319,11 @@ export default function GoogleAICert() {
                 {/* Title */}
                 <div>
                   <h4 className="text-2xl font-bold text-gray-900 mb-1">
-                    Khoá học AI với Google
+                    Khoá AI cho học sinh từ lớp 4
                   </h4>
                   <p className="text-sm text-gray-600">
-                    Chứng chỉ Google Introduction to AI – Nền tảng vững chắc cho các
-                    bạn học sinh trong thời đại của Trí Tuệ Nhân Tạo.
+                    Chứng chỉ Google Introduction to AI – Nền tảng vững chắc cho
+                    các bạn học sinh trong thời đại của Trí Tuệ Nhân Tạo.
                   </p>
                 </div>
 
@@ -339,6 +343,9 @@ export default function GoogleAICert() {
                       <strong>Sĩ số lớp:</strong> Tối đa 15 học viên / Lớp
                     </li>
                     <li>
+                      <strong>Nhận tín chỉ:</strong> 2-3 ngày làm việc
+                    </li>
+                    <li>
                       <strong>Học phí:</strong>{" "}
                       <span>
                         <del>500.000đ</del>{" "}
@@ -349,6 +356,11 @@ export default function GoogleAICert() {
                       </span>{" "}
                       (đã bao gồm tính chỉ)
                     </li>
+                    <li className="flex items-center">
+                      <span className="ml-3 inline-block px-3 py-1 bg-red-100 text-red-700 font-bold rounded-xl shadow-md text-sm animate-[pulseZoom_1.5s_ease-in-out_infinite] mt-2">
+                        🚨 Chỉ còn 8 chỗ!
+                      </span>
+                    </li>
                   </ul>
                 </div>
 
@@ -357,6 +369,10 @@ export default function GoogleAICert() {
                   <h5 className="text-sm font-semibold text-gray-500 uppercase mb-2">
                     Tư vấn miễn phí
                   </h5>
+
+                  <p className="text-sm text-gray-600 mb-2 italic">
+                    Chúng tôi sẽ liên hệ trong 15 phút
+                  </p>
 
                   {/*INput phone number   */}
                   <CallbackForm />
@@ -445,6 +461,20 @@ export default function GoogleAICert() {
           }
           100% {
             transform: translateX(-50%);
+          }
+        }
+      `}</style>
+
+      <style jsx>{`
+        @keyframes pulseZoom {
+          0%,
+          100% {
+            transform: scale(1);
+            opacity: 1;
+          }
+          50% {
+            transform: scale(1.1);
+            opacity: 0.9;
           }
         }
       `}</style>
