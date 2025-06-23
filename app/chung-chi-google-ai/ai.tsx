@@ -102,7 +102,8 @@ export default function GoogleAICert() {
                 Khóa học AI dành cho học sinh từ lớp 4, giúp học viên nắm vững
                 kiến thức và kỹ năng cần thiết để trở thành chuyên gia AI. Được
                 thiết kế bởi các chuyên gia hàng đầu, khóa học cung cấp lộ trình
-                học tập rõ ràng, từ cơ bản đến nâng cao, với chứng chỉ Introduction to AI do GOOGLE công nhận năng lực.
+                học tập rõ ràng, từ cơ bản đến nâng cao, với chứng chỉ
+                Introduction to AI do GOOGLE công nhận năng lực.
               </p>
 
               <div className="grid grid-cols-2 gap-4 mb-8">
@@ -112,7 +113,7 @@ export default function GoogleAICert() {
                 </div>
                 <div className="flex items-center">
                   <Calendar className="h-5 w-5 text-primary mr-2" />
-                  <span className="text-gray-700">Khai giảng: 01/07/2025</span>
+                  <span className="text-gray-700">Khai giảng: 04/07/2025</span>
                 </div>
                 <div className="flex items-center">
                   <Users className="h-5 w-5 text-primary mr-2" />
@@ -220,7 +221,7 @@ export default function GoogleAICert() {
                     dụng học tiếng Anh khác.
                   </li>
                   <li>
-                    <strong>Chứng chỉ Google AI Essentials:</strong> Đạt được
+                    <strong>Chứng chỉ Google Introduction to AI:</strong> Đạt được
                     chứng chỉ công nhận năng lực AI từ Google, với sự hướng dẫn
                     trực tiếp từ đội ngũ giáo viên.
                   </li>
@@ -245,11 +246,10 @@ export default function GoogleAICert() {
                 </li>
                 <li>
                   <strong>Ngày 2:</strong> Học và thực hành các công cụ hỗ trợ,
-                  chuẩn bị có kỳ thi chứng chỉ Google AI Essentials.
+                  chuẩn bị có kỳ thi chứng chỉ Google Introduction to AI.
                 </li>
                 <li>
-                  <strong>Ngày 3:</strong> Học sinh thi chứng chỉ Google AI
-                  Essentials, nhận chứng chỉ và đánh giá kết quả.
+                  <strong>Ngày 3:</strong> Học sinh thi chứng chỉ Google Introduction to AI, nhận chứng chỉ và đánh giá kết quả.
                 </li>
               </ul>
             </div>
@@ -274,7 +274,7 @@ export default function GoogleAICert() {
                 {
                   title: "💰 Học phí đã bao gồm tính chỉ chưa?",
                   content:
-                    "Học phí cho khóa học AI với Google AI Essentials là 500.000đ, đã bao gồm toàn bộ chi phí học tập, các dụng cụ cần thiết như máy tính, và thi chứng chỉ Google AI Essentials. Học sinh sẽ nhận được chứng chỉ sau khi hoàn thành khóa học.",
+                    "Học phí cho khóa học AI với Google Introduction to AI là 399.000 VND, đã bao gồm toàn bộ chi phí học tập, các dụng cụ cần thiết như máy tính, và thi chứng chỉ. Học sinh sẽ nhận được chứng chỉ sau khi hoàn thành khóa học.",
                 },
               ].map((item, index) => (
                 <details
@@ -318,7 +318,7 @@ export default function GoogleAICert() {
                     Khoá học AI với Google
                   </h4>
                   <p className="text-sm text-gray-600">
-                    Chứng chỉ Google AI Essentials – Nền tảng vững chắc cho các
+                    Chứng chỉ Google Introduction to AI – Nền tảng vững chắc cho các
                     bạn học sinh trong thời đại của Trí Tuệ Nhân Tạo.
                   </p>
                 </div>
@@ -339,8 +339,15 @@ export default function GoogleAICert() {
                       <strong>Sĩ số lớp:</strong> Tối đa 15 học viên / Lớp
                     </li>
                     <li>
-                      <strong>Học phí:</strong> 500.000đ / Khoá (đã bao gồm tính
-                      chỉ)
+                      <strong>Học phí:</strong>{" "}
+                      <span>
+                        <del>500.000đ</del>{" "}
+                        <span className="text-primary font-semibold">
+                          399.000đ
+                        </span>{" "}
+                        / Khoá
+                      </span>{" "}
+                      (đã bao gồm tính chỉ)
                     </li>
                   </ul>
                 </div>
